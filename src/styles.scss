@@ -7,6 +7,7 @@ $color-gray: #f6f6f6;
 $color-subtitle: #f9004d;
 $background-color-1: linear-gradient(145deg, #1e2024, #23272b);
 $background-color-2: #212428;
+$background-color-hover: linear-gradient(to right bottom, #212428, #16181c);
 $shadow-1: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
 $shadow-2: inset 21px 21px 19px #181a1d, inset -21px -21px 19px #202225;
 $inner-shadow: 1px 4px 2px -3px rgba(0, 0, 0, 0.7) inset,
@@ -94,6 +95,10 @@ a {
   text-decoration: none;
 }
 
+.p_color {
+  color: $color-primary;
+}
+
 ul#mainNav {
   width: 100%;
   justify-content: end;
@@ -146,6 +151,38 @@ header#MenuM {
     margin-bottom: 4px;
   }
 }
+
+ul.hero_icons {
+  padding: 0;
+  margin: 20px 0 0 0;
+  li {
+    list-style-type: none;
+    display: inline;
+    margin-right: 20px;
+    width: 100%;
+    a {
+      background: $background-color-1;
+      border-radius: 6px;
+      box-shadow: $shadow-1;
+      display: inline-block;
+      font-size: 14px;
+      height: 60px;
+      letter-spacing: 2px;
+      line-height: 60px;
+      position: relative;
+      text-align: center;
+      text-transform: uppercase;
+      transition: $transition;
+      width: 60px;
+      cursor: pointer;
+      &:hover {
+        background: $background-color-hover;
+        transition: $transition;
+      }
+    }
+  }
+}
+
 // --------------MEDIA QURIES--------------
 @media only screen and (max-width: 992px) {
   main#MenuDekstop {

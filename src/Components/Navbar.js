@@ -1,15 +1,16 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
     <>
-      <header id="MenuD">
+      <header id="MenuD" className="mb-5">
         <nav className="navbar navbar-expand-lg navbar-dark">
           <section className="container-xxl">
             <div className="col-lg-3 col-md-3 col-sm-3">
-              <a className="navbar-brand" href="#">
+              <NavLink className="navbar-brand" to="/portfolio">
                 Khan
-              </a>
+              </NavLink>
             </div>
             <div className="col-lg-9 col-md-9 col-sm-9">
               <main id="MenuDekstop">
@@ -30,48 +31,48 @@ const Navbar = () => {
                 >
                   <ul className="navbar-nav" id="mainNav">
                     <li className="nav-item">
-                      <a
+                      <NavLink
                         className="nav-link active"
                         aria-current="page"
-                        href="#"
+                        to="/portfolio"
                       >
                         Home
-                      </a>
+                      </NavLink>
                     </li>
                     <li className="nav-item">
-                      <a className="nav-link" href="#">
+                      <NavLink className="nav-link" to="/">
                         Features
-                      </a>
+                      </NavLink>
                     </li>
                     <li className="nav-item">
-                      <a className="nav-link" href="#">
+                      <NavLink className="nav-link" to="/">
                         Portfolio
-                      </a>
+                      </NavLink>
                     </li>
                     <li className="nav-item">
-                      <a className="nav-link" href="#">
+                      <NavLink className="nav-link" to="/">
                         Resume
-                      </a>
+                      </NavLink>
                     </li>
                     <li className="nav-item">
-                      <a className="nav-link" href="#">
+                      <NavLink className="nav-link" to="/">
                         Clients
-                      </a>
+                      </NavLink>
                     </li>
                     <li className="nav-item">
-                      <a className="nav-link" href="#">
+                      <NavLink className="nav-link" to="/">
                         Pricing
-                      </a>
+                      </NavLink>
                     </li>
                     <li className="nav-item">
-                      <a className="nav-link" href="#">
+                      <NavLink className="nav-link" to="/">
                         Blog
-                      </a>
+                      </NavLink>
                     </li>
                     <li className="nav-item">
-                      <a className="nav-link" href="#">
+                      <NavLink className="nav-link" to="/">
                         Contact
-                      </a>
+                      </NavLink>
                     </li>
                   </ul>
                 </div>
