@@ -5,6 +5,7 @@ import "../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js";
 import Navbar from "./Components/Navbar";
 import { Route, Switch } from "react-router-dom";
 import Home from "./Components/Pages/Home";
+import Typewriter from "typewriter-effect";
 
 const PageUrls = () => {
   return (

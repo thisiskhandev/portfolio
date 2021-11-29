@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 const Navbar = () => {
   return (
     <>
-      <header id="MenuD" className="mb-5">
+      <header id="MenuD" className="mb-5 pb-5">
         <nav className="navbar navbar-expand-lg navbar-dark">
           <section className="container-xxl">
             <div className="col-lg-3 col-md-3 col-sm-3">
@@ -109,7 +109,7 @@ const MenuM = () => {
 
         <div
           className="offcanvas offcanvas-start"
-          tabindex="-1"
+          tabIndex="-1"
           id="offcanvasExample"
           aria-labelledby="offcanvasExampleLabel"
         >
