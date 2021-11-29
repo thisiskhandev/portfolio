@@ -1,26 +1,31 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.d9effeae.chunk.css",
-    "main.js": "/portfolio/static/js/main.879ea8f4.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.879ea8f4.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.01c0bea0.chunk.css",
+    "main.js": "/portfolio/static/js/main.32bc7e40.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.32bc7e40.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.37da8305.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.37da8305.js.map",
     "static/css/2.383c0125.chunk.css": "/portfolio/static/css/2.383c0125.chunk.css",
-    "static/js/2.e5d18bcc.chunk.js": "/portfolio/static/js/2.e5d18bcc.chunk.js",
-    "static/js/2.e5d18bcc.chunk.js.map": "/portfolio/static/js/2.e5d18bcc.chunk.js.map",
+    "static/js/2.f602ef56.chunk.js": "/portfolio/static/js/2.f602ef56.chunk.js",
+    "static/js/2.f602ef56.chunk.js.map": "/portfolio/static/js/2.f602ef56.chunk.js.map",
     "index.html": "/portfolio/index.html",
     "static/css/2.383c0125.chunk.css.map": "/portfolio/static/css/2.383c0125.chunk.css.map",
-    "static/css/main.d9effeae.chunk.css.map": "/portfolio/static/css/main.d9effeae.chunk.css.map",
-    "static/js/2.e5d18bcc.chunk.js.LICENSE.txt": "/portfolio/static/js/2.e5d18bcc.chunk.js.LICENSE.txt",
+    "static/css/main.01c0bea0.chunk.css.map": "/portfolio/static/css/main.01c0bea0.chunk.css.map",
+    "static/js/2.f602ef56.chunk.js.LICENSE.txt": "/portfolio/static/js/2.f602ef56.chunk.js.LICENSE.txt",
+    "static/media/adobe-photoshop.86d7467e.png": "/portfolio/static/media/adobe-photoshop.86d7467e.png",
+    "static/media/arrowIcon.858f931e.svg": "/portfolio/static/media/arrowIcon.858f931e.svg",
+    "static/media/atom.png": "/portfolio/static/media/atom.ac997969.png",
+    "static/media/heroimg.24ee09f0.webp": "/portfolio/static/media/heroimg.24ee09f0.webp",
     "static/media/social-icons (1).c8ddf4f0.svg": "/portfolio/static/media/social-icons (1).c8ddf4f0.svg",
     "static/media/social-icons (2).f1a2485a.svg": "/portfolio/static/media/social-icons (2).f1a2485a.svg",
-    "static/media/social-icons (3).e703a13c.svg": "/portfolio/static/media/social-icons (3).e703a13c.svg"
+    "static/media/social-icons (3).e703a13c.svg": "/portfolio/static/media/social-icons (3).e703a13c.svg",
+    "static/media/wordpress.11ed0915.png": "/portfolio/static/media/wordpress.11ed0915.png"
   },
   "entrypoints": [
     "static/js/runtime-main.37da8305.js",
     "static/css/2.383c0125.chunk.css",
-    "static/js/2.e5d18bcc.chunk.js",
-    "static/css/main.d9effeae.chunk.css",
-    "static/js/main.879ea8f4.chunk.js"
+    "static/js/2.f602ef56.chunk.js",
+    "static/css/main.01c0bea0.chunk.css",
+    "static/js/main.32bc7e40.chunk.js"
   ]
 }
