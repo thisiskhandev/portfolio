@@ -6,7 +6,7 @@ import BootClasses from "./Environments/BootClasses";
 const Features = () => {
   return (
     <>
-      <main className="container cardss">
+      <main className="container cardss" id="featuresMain">
         <section className="row gx-5">
           <div className="col-12">
             <span className="subtitle">FEATURES</span>
@@ -23,12 +23,13 @@ const Features = () => {
                 <div className="card">
                   <div className="card-body">
                     <div className="content">
-                      <img
+                      {/* <img
                         src={val.image}
                         className="img-fluid"
                         alt="TwitchIcon"
                         width="70"
-                      />
+                      /> */}
+                      <div className="icons">{val.image}</div>
                       <h3 className="card-title mt-4">{val.title}</h3>
                       <p className="card-text mt-4">{val.para}</p>
                       <img

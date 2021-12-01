@@ -99,6 +99,10 @@ a {
 
 span.subtitle {
   font-size: 14px;
+  line-height: 1.7;
+  color: $color-subtitle;
+  display: block;
+  letter-spacing: 1px;
 }
 
 p {
@@ -115,11 +119,8 @@ p {
   color: #000;
 }
 
-span.subtitle {
-  color: $color-subtitle;
-  display: block;
-  letter-spacing: 1px;
-  line-height: 14px;
+span.sp_title {
+  color: $color-primary;
 }
 
 h2.title {
@@ -131,6 +132,23 @@ h2.title {
   margin-top: 15px;
 }
 
+.cta a {
+  background: $background-color-1;
+  color: $color-body;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.4px;
+  padding: 17px 40px;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: $shadow-1;
+
+  &:hover {
+    background: $background-color-hover;
+    color: $color-white;
+  }
+}
+
 ul#mainNav {
   width: 100%;
   justify-content: end;
@@ -138,6 +156,11 @@ ul#mainNav {
 }
 
 #MenuD nav.navbar {
+  position: fixed;
+  width: 100%;
+  background: $background-color-1;
+  box-shadow: $shadow-1;
+  z-index: 10;
   a {
     text-transform: uppercase;
     font-weight: 300;
@@ -254,18 +277,29 @@ img.hero_image {
     cursor: default;
     &:hover {
       background: $background-color-hover;
+      h3.portfolio_title {
+        color: $color-primary;
+      }
       img.arrow_icons {
         visibility: visible;
         transition: 0.2s;
         // width: 30px;
         transform: scale(1.5);
       }
+      img.portfolio_icons {
+        transform: scale(1);
+      }
     }
     .content {
       transition: $transition;
+      h3 {
+        font-size: 24px;
+        font-weight: 600;
+      }
       &:hover {
         transform: translateY(-10px);
         transition: $transition;
+        color: $color-white;
       }
     }
     img.arrow_icons {
@@ -274,6 +308,78 @@ img.hero_image {
       transform: scale(0);
       transform-origin: left;
       // width: 0;
+    }
+  }
+  div.icons {
+    font-size: 50px;
+    color: $color-primary;
+  }
+  .image img {
+    border-radius: 8px;
+  }
+}
+
+span.likes_project {
+  font-weight: 300;
+  > svg {
+    margin-top: -5px;
+  }
+}
+
+.portfolio_modal {
+  span,
+  p {
+    color: $color-body;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  h3 {
+    font-weight: 700;
+    font-size: $h3;
+  }
+  .modal-dialog {
+    max-width: 1200px;
+  }
+  #pModal {
+    background: $background-color-2;
+  }
+  .modal-body {
+    padding: 10px 60px 60px 60px;
+  }
+  .modal-content {
+    background: $background-color-1;
+    box-shadow: $shadow-1;
+    border: none;
+    .modal-header {
+      border: none;
+    }
+  }
+  button.btn-close {
+    background: url("./Assets/Images/Icons/closeIcon.svg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+    background-origin: border-box;
+    transform: scale(1);
+    box-shadow: $shadow-1;
+    border-radius: 50px;
+    padding: 15px;
+  }
+  a.view_project_btn {
+    position: absolute;
+    bottom: 0;
+    text-decoration: none;
+    color: $color-body;
+    font-weight: 500;
+    font-size: 13px;
+    letter-spacing: 0.2px;
+    padding: 15px;
+    background: $background-color-1;
+    text-align: center;
+    border-radius: 4px;
+    box-shadow: $shadow-1;
+    &:hover {
+      background: $background-color-hover;
     }
   }
 }
@@ -306,11 +412,32 @@ img.hero_image {
       margin: 0;
     }
   }
+  .portfolio_modal {
+    .modal-body {
+      padding: 10px 15px 30px 15px;
+    }
+    article {
+      padding-bottom: 80px;
+    }
+    a.view_project_btn {
+      display: block;
+      width: 30%;
+    }
+  }
 }
 
 @media only screen and (max-width: 576px) {
   h1.title {
     font-size: $h3;
+  }
+  .portfolio_modal {
+    h3 {
+      font-size: $h4;
+    }
+    a.view_project_btn {
+      display: block;
+      width: 90%;
+    }
   }
 }
 
