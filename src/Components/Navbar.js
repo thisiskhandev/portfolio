@@ -6,9 +6,9 @@ const Navbar = () => {
     <>
       <header id="MenuD" className="mb-5 pb-5">
         <nav className="navbar navbar-expand-lg navbar-dark">
-          <section className="container-xxl">
+          <section className="container-fluid">
             <div className="col-lg-3 col-md-3 col-sm-3">
-              <NavLink className="navbar-brand" to="/portfolio">
+              <NavLink className="navbar-brand" activeClassName to="/portfolio">
                 Khan
               </NavLink>
             </div>

@@ -1,7 +1,8 @@
-import { AiFillAppstore, AiOutlineMobile } from "react-icons/ai";
+import { AiFillAppstore } from "react-icons/ai";
 import { SiMarketo } from "react-icons/si";
 import { FaConnectdevelop, FaWordpressSimple } from "react-icons/fa";
 import { BsGearWideConnected } from "react-icons/bs";
+import { BiSearchAlt } from "react-icons/bi";
 
 const CardsFeaturedArr = [
   {
@@ -13,27 +14,27 @@ const CardsFeaturedArr = [
   },
   {
     id: 2,
-    image: <AiOutlineMobile />,
-    title: "Mobile Apps Development",
-    para: "I are a leading mobile app development company for enterprise level entities, I can build robust, fully scalable and secure mobile apps.",
+    image: <FaWordpressSimple />,
+    title: "WordPress Development",
+    para: "Professional in Wordpress Development speciality in Page builders Elementor and WP Bakery and Flatsome and more.",
   },
   {
     id: 3,
     image: <SiMarketo />,
-    title: "Ecommerce Development",
+    title: "Ecommerce Solutions",
     para: "A compelling e-commerce design requires creativity, innovation, skill and experience on part of the developer and competitor",
   },
   {
     id: 4,
     image: <FaConnectdevelop />,
-    title: "Digital Marketing",
-    para: "Our marketing strategy is centered around helping you grow your business and reach out to millions of people.",
+    title: "Real Estate & Marketing",
+    para: "My marketing strategy is centered around helping you grow your business and reach out to millions of people.",
   },
   {
     id: 5,
-    image: <FaWordpressSimple />,
-    title: "WordPress Development",
-    para: "Professional in Wordpress Development espicallty in Page builders Elementor and WP Bakery and Flatsome and more.",
+    image: <BiSearchAlt />,
+    title: "SEO & Optimization",
+    para: "By working with me, you will get a premium SEO experience on knowing that your website is in good hands.",
   },
   {
     id: 6,

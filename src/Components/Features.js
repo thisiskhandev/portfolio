@@ -34,7 +34,7 @@ const Features = () => {
                       <p className="card-text mt-4">{val.para}</p>
                       <img
                         src={ArrowIcon}
-                        className="img-fluid mt-1 arrow_icons"
+                        className="img-fluid mt-1 arrow_icons straight_icon"
                         alt="ArrowIcon"
                       />
                     </div>

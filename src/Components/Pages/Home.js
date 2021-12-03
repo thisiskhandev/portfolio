@@ -3,6 +3,7 @@ import HeroSection from "../HeroSection";
 import Linebar from "../Linebar";
 import Features from "../Features";
 import Portfolio from "../Porfolio";
+import Resume from "../Resume";
 const Home = () => {
   return (
     <>
@@ -11,6 +12,8 @@ const Home = () => {
       <Features />
       <Linebar />
       <Portfolio />
+      <Linebar />
+      <Resume />
       <Linebar />
     </>
   );
