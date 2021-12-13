@@ -1,5 +1,7 @@
 import React from "react";
-import "../../src/index.css";
+import ProgressBarLeft from "./Environments/Progress/ProgressBarLeft";
+import ProgressBarRight from "./Environments/Progress/ProgressBarRight";
+import BootClasses from "./Environments/BootClasses";
 
 const Resume = () => {
   return (
@@ -39,12 +41,21 @@ const ResumeTab = () => {
           showContent=" show "
           TabContentName="Education"
           TabContent={<EducationData />}
+          TitleContent="Education Quality"
+          Features="2015 - 2021"
         />
         <TabContent
           TabContentName="ProfessionalSkills"
           TabContent={<ProgressData />}
+          TitleContent="Design & Development Skills"
+          Features="Features"
         />
-        <TabContent TabContentName="Experince" TabContent={<ExperinceData />} />
+        <TabContent
+          TabContentName="Experince"
+          TabContent={<ExperinceData />}
+          TitleContent="Job Experience"
+          Features="2017 - 2021"
+        />
       </div>
     </>
   );
@@ -83,6 +94,10 @@ const TabContent = (props) => {
         role="tabpanel"
         aria-labelledby={props.TabContentName + "-tab"}
       >
+        <div className="content_title">
+          <span className="subtitle">{props.Features}</span>
+          <h4 className="title mb-5">{props.TitleContent}</h4>
+        </div>
         {props.TabContent}
       </div>
     </>
@@ -218,24 +233,66 @@ const ExperinceData = () => {
 const ProgressData = () => {
   return (
     <>
-      <section
-        className="progress"
-        data-bs-toggle="tooltip"
-        data-bs-placement="top"
-        title="Tooltip on top"
-        style={{ maxWidth: "900px", margin: "auto" }}
-      >
-        <div
-          className="progress-bar"
-          role="progressbar"
-          style={{ width: "25%" }}
-          aria-valuenow="25"
-          aria-valuemin="0"
-          aria-valuemax="100"
-        >
-          25%
-        </div>
-      </section>
+      <main className="row progress_bars">
+        <section className={BootClasses[0].Col6Class}>
+          {ProgressBarLeft.map((values) => {
+            return (
+              <div
+                className="progress_chart position-relative mb-5"
+                key={values.id}
+              >
+                <h6 className="title text-uppercase">{values.progressTitle}</h6>
+                <section
+                  className="progress"
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="top"
+                  title="Tooltip on top"
+                >
+                  <div
+                    className="progress-bar"
+                    role="progressbar"
+                    style={{ width: "50%" }}
+                    aria-valuenow={values.progress}
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  >
+                    <span>{values.progress + "%"}</span>
+                  </div>
+                </section>
+              </div>
+            );
+          })}
+        </section>
+        <section className={BootClasses[0].Col6Class}>
+          {ProgressBarRight.map((values) => {
+            return (
+              <div
+                className="progress_chart position-relative mb-5"
+                key={values.id}
+              >
+                <h6 className="title text-uppercase">{values.progressTitle}</h6>
+                <section
+                  className="progress"
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="top"
+                  title="Tooltip on top"
+                >
+                  <div
+                    className="progress-bar"
+                    role="progressbar"
+                    style={{ width: "50%" }}
+                    aria-valuenow={values.progress}
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  >
+                    <span>{values.progress + "%"}</span>
+                  </div>
+                </section>
+              </div>
+            );
+          })}
+        </section>
+      </main>
     </>
   );
 };

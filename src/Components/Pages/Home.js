@@ -4,6 +4,7 @@ import Linebar from "../Linebar";
 import Features from "../Features";
 import Portfolio from "../Porfolio";
 import Resume from "../Resume";
+import Testimonials from "../Testimonials";
 const Home = () => {
   return (
     <>
@@ -14,6 +15,8 @@ const Home = () => {
       <Portfolio />
       <Linebar />
       <Resume />
+      <Linebar />
+      <Testimonials />
       <Linebar />
     </>
   );
