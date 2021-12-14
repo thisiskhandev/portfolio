@@ -45,6 +45,7 @@ $color-instagram: #c231a1;
 $color-vimeo: #00adef;
 $color-twitch: #6441a3;
 $color-discord: #7289da;
+$color-gold: #fbac23;
 $f-light: 300;
 $f-regular: 400;
 $f-medium: 500;
@@ -97,11 +98,21 @@ $h6: 15px;
 }
 
 body#body {
-  background-color: #212428;
+  background-color: $background-color-2;
   font-family: $font-secondary;
   overflow: hidden;
   overflow-y: auto;
   color: $color-lightn;
+}
+
+.no_hover {
+  &:hover {
+    background: $background-color-2 !important;
+  }
+}
+
+.height-100 {
+  height: 100%;
 }
 
 p,
@@ -135,7 +146,8 @@ p {
 .linebar > hr {
   width: 95%;
   margin: 80px auto;
-  color: #000;
+  color: $color-dark;
+  opacity: 1;
 }
 
 span.sp_title {
@@ -524,7 +536,7 @@ main.resume {
       width: 20px;
       height: 20px;
       right: -9px;
-      background-color: #212428;
+      background-color: $background-color-2;
       border: 4px solid $color-dark;
       top: 15px;
       border-radius: 50%;
@@ -599,6 +611,88 @@ main.progress_bars {
   }
 }
 
+main.testi_card {
+  max-width: 1200px;
+  margin: auto;
+  .designation {
+    font-weight: 300;
+    font-family: $font-primary;
+    color: $color-body;
+    font-size: 14px;
+  }
+  .card-title {
+    font-family: $font-primary;
+    font-weight: 600;
+  }
+  .card {
+    height: 100%;
+    padding: 20px;
+    background: $background-color-1;
+    box-shadow: $shadow-1;
+    &:hover {
+      background: $background-color-hover;
+    }
+  }
+  .inner_image {
+    display: inline-block;
+    margin: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    img {
+      display: block;
+      transition: 0.1s;
+      object-fit: cover;
+    }
+    &:hover {
+      img {
+        transform: scale(1.2);
+        transform-origin: 50% 50%;
+        transition: 0.1s;
+      }
+    }
+  }
+  .card_description {
+    padding: 20px;
+    padding-bottom: 0;
+  }
+  span.date,
+  p.description {
+    color: $color-body;
+    font-size: 16px;
+    font-family: $font-primary;
+    font-weight: 500;
+  }
+  hr {
+    color: $color-dark;
+    width: 97%;
+    margin: 20px auto;
+    padding: 0;
+    height: 2px;
+    opacity: 0.8;
+  }
+  .rating {
+    padding: 10px;
+    background: $background-color-1;
+    box-shadow: $shadow-1;
+    border-radius: 10px;
+    svg {
+      color: $color-gold;
+      width: 14px;
+      display: inline-block;
+      margin: 0 2px;
+    }
+  }
+  div.card_line::before {
+    content: "";
+    background: #000;
+    width: 40px;
+    height: 6px;
+    top: 50px;
+    left: -30px;
+    position: absolute;
+    z-index: -1;
+  }
+}
 // --------------MEDIA QURIES--------------
 @media only screen and (max-width: 1200px) {
   .inner {

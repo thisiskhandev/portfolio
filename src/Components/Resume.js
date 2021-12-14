@@ -73,7 +73,7 @@ const TabsPillsBtns = (props) => {
         role="tab"
         aria-controls={props.TabName}
         aria-selected="true"
-        activeClassName="activeClassName"
+        // activeClassName="activeClassName"
       >
         {props.TabName}
       </button>

@@ -8,7 +8,7 @@ const Navbar = () => {
         <nav className="navbar navbar-expand-lg navbar-dark">
           <section className="container-fluid">
             <div className="col-lg-3 col-md-3 col-sm-3">
-              <NavLink className="navbar-brand" activeClassName to="/portfolio">
+              <NavLink className="navbar-brand" to="/portfolio">
                 Khan
               </NavLink>
             </div>
