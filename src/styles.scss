@@ -133,6 +133,7 @@ span.subtitle {
   font-family: $font-primary;
   letter-spacing: 2px;
   font-weight: 300;
+  text-transform: capitalize;
 }
 
 p {
@@ -196,9 +197,12 @@ ul#mainNav {
 #MenuD nav.navbar {
   position: fixed;
   width: 100%;
-  background: $background-color-1;
+  background-color: #212428de;
   box-shadow: $shadow-1;
   z-index: 10;
+  backdrop-filter: blur(15px);
+  line-height: 3;
+  display: block;
   a {
     text-transform: uppercase;
     font-weight: 300;
@@ -345,6 +349,19 @@ img.hero_image {
       }
     }
     .content.portfolio_content {
+      div.image {
+        overflow: hidden;
+        border-radius: 8px;
+        img {
+          transition: 0.3s;
+        }
+        &:hover > img {
+          transform: scale(1.2);
+          transform-origin: 50% 50%;
+          transition: 0.3s;
+          filter: contrast(1.1);
+        }
+      }
       &:hover {
         transform: translateY(0px);
       }
@@ -364,9 +381,6 @@ img.hero_image {
   div.icons {
     font-size: 50px;
     color: $color-primary;
-  }
-  .image img {
-    border-radius: 8px;
   }
 }
 
@@ -447,7 +461,7 @@ span.likes_project {
   }
 }
 
-main.resume {
+main#resume.resume {
   ul#myTab {
     display: flex;
     justify-content: center;
@@ -479,6 +493,9 @@ main.resume {
       color: $color-primary;
       box-shadow: $shadow-1;
     }
+  }
+  #Education {
+    margin: 0 !important;
   }
 }
 
@@ -514,6 +531,7 @@ main.resume {
     }
     h2 {
       text-transform: capitalize;
+      font-weight: 500;
     }
     h3 {
       font-size: $h5;
@@ -613,7 +631,7 @@ main.progress_bars {
 
 main.testi_card {
   max-width: 1200px;
-  margin: auto;
+  margin: 20px auto;
   .designation {
     font-weight: 300;
     font-family: $font-primary;
@@ -692,7 +710,59 @@ main.testi_card {
     position: absolute;
     z-index: -1;
   }
+  img.quote_image {
+    width: 135px;
+  }
 }
+
+#testimonial {
+  .owl-carousel {
+    .owl-item {
+      img {
+        width: auto;
+      }
+    }
+  }
+}
+
+#testimonials {
+  .owl-dots {
+    button.owl-dot {
+      span {
+        background: $background-color-1;
+        border: 0;
+        cursor: pointer;
+        font-size: 0;
+        height: 12px;
+        line-height: 0;
+        padding: 0;
+        transition: $transition;
+        width: 12px;
+      }
+      &.active span {
+        background: $color-primary;
+      }
+    }
+  }
+  .owl-nav {
+    position: absolute;
+    right: 8%;
+    top: 20%;
+    button {
+      background: $background-color-1;
+      line-height: 2.5;
+      width: 50px;
+      color: #fff;
+      padding: 0;
+      font-size: 25px;
+      box-shadow: $shadow-1;
+      &:hover {
+        color: $color-primary;
+      }
+    }
+  }
+}
+
 // --------------MEDIA QURIES--------------
 @media only screen and (max-width: 1200px) {
   .inner {
@@ -749,6 +819,24 @@ main.testi_card {
   h4.title {
     font-size: 30px;
   }
+  main.testi_card {
+    div.card_line {
+      &::before {
+        display: none;
+      }
+    }
+    img.quote_image {
+      width: 0;
+    }
+    .inner_image {
+      img {
+        width: 250px;
+      }
+    }
+  }
+  #testimonials .owl-nav {
+    top: 90px;
+  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -792,12 +880,29 @@ main.testi_card {
         left: 0;
       }
     }
+    .timeline_content {
+      h2 {
+        font-size: 22px;
+        line-height: 1.5;
+        font-weight: 600;
+      }
+    }
+  }
+  #testimonials .owl-nav {
+    right: 60px;
+    button {
+      line-height: 2;
+    }
   }
 }
 
 @media only screen and (max-width: 576px) {
   h1.title {
-    font-size: $h3;
+    font-size: 25px;
+    line-height: 1.5;
+  }
+  .cardss .card-body {
+    padding: 15px;
   }
   .portfolio_modal {
     h3 {
@@ -807,6 +912,37 @@ main.testi_card {
       display: block;
       width: 90%;
     }
+  }
+  main.testi_card {
+    .inner_image img {
+      width: 100%;
+    }
+    .rating {
+      padding: 0;
+      line-height: 3;
+      text-align: center;
+      width: 100%;
+    }
+    .card_description,
+    .card {
+      padding: 12px;
+    }
+    .card_description {
+      margin: 0;
+      h3.title {
+        font-size: 20px;
+        line-height: 1.4;
+      }
+      span.date {
+        font-size: 12px;
+      }
+    }
+  }
+  #testimonials .owl-nav {
+    top: auto;
+    right: 0;
+    left: 0;
+    bottom: -60px;
   }
 }
 

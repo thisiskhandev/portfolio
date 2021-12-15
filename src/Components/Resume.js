@@ -32,7 +32,7 @@ const ResumeTab = () => {
         <li className="nav-item" role="presentation">
           <TabsPillsBtns TabName="Education" ActiveClassName=" active " />
           <TabsPillsBtns TabName="ProfessionalSkills" />
-          <TabsPillsBtns TabName="Experince" />
+          <TabsPillsBtns TabName="Experience" />
         </li>
       </ul>
       <div className="tab-content" id="myTabContent">
@@ -51,8 +51,8 @@ const ResumeTab = () => {
           Features="Features"
         />
         <TabContent
-          TabContentName="Experince"
-          TabContent={<ExperinceData />}
+          TabContentName="Experience"
+          TabContent={<ExperienceData />}
           TitleContent="Job Experience"
           Features="2017 - 2021"
         />
@@ -86,7 +86,7 @@ const TabContent = (props) => {
     <>
       <div
         className={
-          "text-start tab-pane fade py-5 " +
+          "text-start tab-pane fade pt-5 mt-5" +
           props.ActiveClassName +
           props.showContent
         }
@@ -145,7 +145,7 @@ const EducationData = () => {
   );
 };
 
-const ExperinceData = () => {
+const ExperienceData = () => {
   return (
     <>
       <div className="timeline">
@@ -251,7 +251,7 @@ const ProgressData = () => {
                   <div
                     className="progress-bar"
                     role="progressbar"
-                    style={{ width: "50%" }}
+                    style={{ width: values.progress+"%" }}
                     aria-valuenow={values.progress}
                     aria-valuemin="0"
                     aria-valuemax="100"
@@ -280,7 +280,7 @@ const ProgressData = () => {
                   <div
                     className="progress-bar"
                     role="progressbar"
-                    style={{ width: "50%" }}
+                    style={{ width: values.progress+"%" }}
                     aria-valuenow={values.progress}
                     aria-valuemin="0"
                     aria-valuemax="100"

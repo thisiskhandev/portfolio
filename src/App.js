@@ -23,10 +23,8 @@ const PageUrls = () => {
 const App = () => {
   return (
     <>
-      <main className="">
-        <Navbar />
-        <PageUrls />
-      </main>
+      <Navbar />
+      <PageUrls />
     </>
   );
 };
