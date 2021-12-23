@@ -5,6 +5,7 @@ import Features from "../Features";
 import Portfolio from "../Porfolio";
 import Resume from "../Resume";
 import Testimonials from "../Testimonials";
+import Clients from "../Clients";
 const Home = () => {
   return (
     <>
@@ -17,6 +18,8 @@ const Home = () => {
       <Resume />
       <Linebar />
       <Testimonials />
+      <Linebar />
+      <Clients />
       <Linebar />
     </>
   );

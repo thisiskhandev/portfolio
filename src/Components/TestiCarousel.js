@@ -18,7 +18,9 @@ const TestiCarousel = () => {
         margin={0}
         lazyLoad
         items={1}
-        navText={["&#10229;", "&#10230;"]}
+        // navText={["&#10229;", "&#10230;"]}
+        navText={["<",">"]}
+
         // smartSpeed={3000}
       >
         {/* <div className="item">
