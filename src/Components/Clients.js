@@ -10,7 +10,7 @@ const Clients = () => {
         <section className="row">
           <div className="col-12">
             <span className="subtitle">POPULAR CLIENTS</span>
-            <h2 className="title">POPULAR CLIENTS</h2>
+            <h2 className="title">Popular Clients</h2>
           </div>
         </section>
         <section className="row mt-5">
@@ -30,39 +30,41 @@ const Tabs = () => {
   return (
     <>
       <section className="container">
-        <div className="d-flex align-items-start ">
-          <div
-            className="nav flex-column nav-pills me-3 col-4"
-            id="v-pills-tab"
-            role="tablist"
-            aria-orientation="vertical"
-          >
-            <button
-              className="nav-link active"
-              id="v-pills-home-tab"
-              data-bs-toggle="pill"
-              data-bs-target="#v-pills-home"
-              type="button"
-              role="tab"
-              aria-controls="v-pills-home"
-              aria-selected="true"
+        <div className="row">
+          <div className="align-items-start d-lg-flex">
+            <div
+              className="nav flex-column nav-pills me-3 col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12"
+              id="v-pills-tab"
+              role="tablist"
+              aria-orientation="vertical"
             >
-              WordPress
-            </button>
-            <button
-              className="nav-link"
-              id="v-pills-profile-tab"
-              data-bs-toggle="pill"
-              data-bs-target="#v-pills-profile"
-              type="button"
-              role="tab"
-              aria-controls="v-pills-profile"
-              aria-selected="false"
-            >
-              Custom HTML
-            </button>
+              <button
+                className="nav-link active"
+                id="v-pills-home-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#v-pills-home"
+                type="button"
+                role="tab"
+                aria-controls="v-pills-home"
+                aria-selected="true"
+              >
+                WordPress
+              </button>
+              <button
+                className="nav-link"
+                id="v-pills-profile-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#v-pills-profile"
+                type="button"
+                role="tab"
+                aria-controls="v-pills-profile"
+                aria-selected="false"
+              >
+                Custom HTML
+              </button>
+            </div>
+            <TabContent />
           </div>
-          <TabContent />
         </div>
       </section>
     </>
@@ -72,7 +74,7 @@ const Tabs = () => {
 const TabContent = () => {
   return (
     <>
-      <section className="col-8">
+      <section className="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
         <div className="tab-content" id="v-pills-tabContent">
           <div
             className="tab-pane fade show active"
@@ -121,7 +123,7 @@ const TabContent = () => {
 const ClientData = (props) => {
   return (
     <>
-      <div className="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+      <div className="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
         <div className="client_card card">
           <a
             href={props.ClientTarget}

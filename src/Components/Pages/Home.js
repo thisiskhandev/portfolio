@@ -6,6 +6,7 @@ import Portfolio from "../Porfolio";
 import Resume from "../Resume";
 import Testimonials from "../Testimonials";
 import Clients from "../Clients";
+import Blogs from "../Blogs";
 const Home = () => {
   return (
     <>
@@ -20,6 +21,8 @@ const Home = () => {
       <Testimonials />
       <Linebar />
       <Clients />
+      <Linebar />
+      <Blogs />
       <Linebar />
     </>
   );
