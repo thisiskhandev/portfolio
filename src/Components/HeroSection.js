@@ -16,7 +16,7 @@ const HeroSocialIcons = (props) => {
     <>
       <li>
         <a href={props.socialLink} target="_blank" rel="noopener noreferrer">
-          <img src={props.imgsrc} alt="IconFB" />
+          <img src={props.imgsrc} alt={props.alter}/>
         </a>
       </li>
     </>
@@ -56,14 +56,17 @@ const Home = () => {
                     <HeroSocialIcons
                       imgsrc={IconFB}
                       socialLink={SocialLinks[0].fbLink}
+                      alter={SocialLinks[0].alter}
                     />
                     <HeroSocialIcons
                       imgsrc={IconInsta}
                       socialLink={SocialLinks[2].gitLink}
+                      alter={SocialLinks[2].alter}
                     />
                     <HeroSocialIcons
                       imgsrc={IconLinkedIn}
                       socialLink={SocialLinks[1].LinkedInLink}
+                      alter={SocialLinks[1].alter}
                     />
                   </ul>
                 </div>
@@ -74,7 +77,9 @@ const Home = () => {
                 >
                   <span className="subtitle">BEST SKILL ON</span>
                   <ul className="hero_icons skills_icons">
-                    <HeroSocialIcons imgsrc={ReactIcon} />
+                    <HeroSocialIcons
+                      imgsrc={ReactIcon}
+                    />
                     <HeroSocialIcons imgsrc={WordPressIcon} />
                     <HeroSocialIcons imgsrc={PSDIcon} />
                   </ul>

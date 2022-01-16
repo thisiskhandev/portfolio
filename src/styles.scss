@@ -86,6 +86,36 @@ $h6: 15px;
   }
 }
 
+@mixin anchor-style {
+  a {
+    transition: 0.3s;
+    color: #fff;
+    position: relative;
+    text-decoration: none;
+    &:hover {
+      color: $color-primary;
+      transition: 0.3s;
+      &::after {
+        content: "";
+        display: block;
+        background: $color-primary;
+        width: 100%;
+        height: 1px;
+        margin: auto;
+        transition: 0.3s;
+      }
+    }
+    &::after {
+      content: "";
+      width: 0;
+      position: absolute;
+      right: 0;
+      left: 0;
+      transition: 0.3s;
+    }
+  }
+}
+
 ::selection {
   background-color: $color-primary;
   color: $color-secondary;
@@ -297,6 +327,7 @@ ul.hero_icons {
       &:hover {
         background: $background-color-hover;
         transition: $transition;
+        transform: translateY(-5px);
       }
     }
   }
@@ -370,6 +401,7 @@ img.hero_image {
         border-radius: 8px;
         img {
           transition: 0.3s;
+          width: 100%;
         }
         &:hover > img {
           transform: scale(1.2);
@@ -747,7 +779,7 @@ main.testi_card {
   .owl-dots {
     button.owl-dot {
       span {
-        background: $background-color-1;
+        background: linear-gradient(145deg, #161718, #23272b);
         border: 0;
         cursor: pointer;
         font-size: 0;
@@ -894,6 +926,78 @@ main.testi_card {
       }
     }
   }
+}
+
+#contactFormSec {
+  .card {
+    height: 100%;
+    .card-body {
+      padding-bottom: 40px;
+      &:hover {
+        background: $background-color-1;
+      }
+      .content {
+        height: auto;
+        color: $color-body;
+        font-size: 18px;
+        font-family: $font-primary;
+        @include anchor-style();
+      }
+    }
+  }
+  form {
+    font-family: $font-secondary;
+    label {
+      color: #a0a8b3;
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 1px;
+    }
+    input {
+      height: 55px;
+    }
+    textarea {
+      resize: none;
+    }
+    input,
+    textarea {
+      background-color: #191b1e;
+      border: 2px solid #191b1e;
+      border-radius: 6px;
+      box-shadow: $inner-shadow;
+      color: #a0a8b3;
+      font-size: 14px;
+      letter-spacing: 1px;
+      padding: 20px;
+      transition: $transition;
+      &:hover,
+      &:focus {
+        border-color: $color-primary;
+      }
+    }
+    button {
+      color: $color-primary;
+      background: $background-color-1;
+      border: 0;
+      border-radius: 6px;
+      box-shadow: $shadow-1;
+      font-size: 14px;
+      font-weight: 500;
+      position: relative;
+      transition: $transition;
+      z-index: 1;
+      width: 200px;
+      line-height: 3;
+      &:hover {
+        background: $background-color-hover;
+        transform: translateY(-10px);
+      }
+    }
+  }
+}
+
+#footer {
+  @include anchor-style();
 }
 
 // --------------MEDIA QURIES--------------
@@ -1083,6 +1187,9 @@ main.testi_card {
     right: 0;
     left: 0;
     bottom: -60px;
+  }
+  #contactFormSec form button {
+    width: 100%;
   }
 }
 
