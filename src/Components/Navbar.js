@@ -40,22 +40,22 @@ const Navbar = () => {
                       </NavLink>
                     </li>
                     <li className="nav-item">
-                      <a href="#featuresMain" className="nav-link">
+                      <a href="portfolio#featuresMain" className="nav-link">
                         Features
                       </a>
                     </li>
                     <li className="nav-item">
-                      <a href="#portfolioMain" className="nav-link">
+                      <a href="portfolio#portfolioMain" className="nav-link">
                         Portfolio
                       </a>
                     </li>
                     <li className="nav-item">
-                      <NavLink className="nav-link" to="/">
+                      <NavLink className="nav-link" to="/about">
                         Resume
                       </NavLink>
                     </li>
                     <li className="nav-item">
-                      <NavLink className="nav-link" to="/">
+                      <NavLink className="nav-link" to="/portfolio">
                         Clients
                       </NavLink>
                     </li>

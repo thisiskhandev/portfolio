@@ -7,6 +7,6 @@ Personal Porfolio of Hassan Khan
 ✔ Owl Carousel 2.3.3
 ✔ AOS 2.3.4
 
-Live Git site: https://github.com/thisiskhandev/portfolio
+Live Git site: https://thisiskhandev.github.io/portfolio/
 
 LinkedIn: https://www.linkedin.com/in/khan-hassan-m/

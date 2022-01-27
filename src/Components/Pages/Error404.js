@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 const Error404 = () => {
   return (
@@ -7,9 +8,9 @@ const Error404 = () => {
         <section className="row">
           <div className="col-12">
             <h1>Oops! You've missed something?</h1>
-            <a href="/portfolio" className="text-capitalize">
+            <NavLink to="/portfolio" className="text-capitalize">
               Back to homepage
-            </a>
+            </NavLink>
           </div>
         </section>
       </main>

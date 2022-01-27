@@ -24,9 +24,6 @@ const Portfolio = () => {
               <div className={BootClasses[0].CardClass} key={val.id}>
                 <div
                   className="card"
-                  data-aos="flip-up"
-                  data-aos-duration={val.animDuration}
-                  data-aos-easing="linear"
                 >
                   <div className="card-body">
                     <div className="content portfolio_content">
