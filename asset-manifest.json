@@ -1,18 +1,19 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.97b08b69.chunk.css",
-    "main.js": "/portfolio/static/js/main.50c62dd4.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.50c62dd4.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.b940264f.chunk.css",
+    "main.js": "/portfolio/static/js/main.91e315a7.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.91e315a7.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.37da8305.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.37da8305.js.map",
-    "static/css/2.2dfeb3bc.chunk.css": "/portfolio/static/css/2.2dfeb3bc.chunk.css",
-    "static/js/2.da883c0d.chunk.js": "/portfolio/static/js/2.da883c0d.chunk.js",
-    "static/js/2.da883c0d.chunk.js.map": "/portfolio/static/js/2.da883c0d.chunk.js.map",
+    "static/css/2.9d5628d6.chunk.css": "/portfolio/static/css/2.9d5628d6.chunk.css",
+    "static/js/2.98bbd07e.chunk.js": "/portfolio/static/js/2.98bbd07e.chunk.js",
+    "static/js/2.98bbd07e.chunk.js.map": "/portfolio/static/js/2.98bbd07e.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "static/css/2.2dfeb3bc.chunk.css.map": "/portfolio/static/css/2.2dfeb3bc.chunk.css.map",
-    "static/css/main.97b08b69.chunk.css.map": "/portfolio/static/css/main.97b08b69.chunk.css.map",
-    "static/js/2.da883c0d.chunk.js.LICENSE.txt": "/portfolio/static/js/2.da883c0d.chunk.js.LICENSE.txt",
+    "static/css/2.9d5628d6.chunk.css.map": "/portfolio/static/css/2.9d5628d6.chunk.css.map",
+    "static/css/main.b940264f.chunk.css.map": "/portfolio/static/css/main.b940264f.chunk.css.map",
+    "static/js/2.98bbd07e.chunk.js.LICENSE.txt": "/portfolio/static/js/2.98bbd07e.chunk.js.LICENSE.txt",
     "static/media/ARIANESPACE-telescope.jpg": "/portfolio/static/media/ARIANESPACE-telescope.05a54884.jpg",
+    "static/media/Resume-Hassan-28-01-22.919d03b0.png": "/portfolio/static/media/Resume-Hassan-28-01-22.919d03b0.png",
     "static/media/adobe-photoshop.86d7467e.png": "/portfolio/static/media/adobe-photoshop.86d7467e.png",
     "static/media/arraowicon_portfolio.c053d79d.svg": "/portfolio/static/media/arraowicon_portfolio.c053d79d.svg",
     "static/media/arrowIcon.858f931e.svg": "/portfolio/static/media/arrowIcon.858f931e.svg",
@@ -35,9 +36,9 @@
   },
   "entrypoints": [
     "static/js/runtime-main.37da8305.js",
-    "static/css/2.2dfeb3bc.chunk.css",
-    "static/js/2.da883c0d.chunk.js",
-    "static/css/main.97b08b69.chunk.css",
-    "static/js/main.50c62dd4.chunk.js"
+    "static/css/2.9d5628d6.chunk.css",
+    "static/js/2.98bbd07e.chunk.js",
+    "static/css/main.b940264f.chunk.css",
+    "static/js/main.91e315a7.chunk.js"
   ]
 }
