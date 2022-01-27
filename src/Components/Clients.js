@@ -7,7 +7,7 @@ const Clients = () => {
   return (
     <>
       <main className="container" id="clients">
-        <section className="row">
+        <section className="row" data-aos="fade-up" data-aos-duration="500">
           <div className="col-12">
             <span className="subtitle">POPULAR CLIENTS</span>
             <h2 className="title">Popular Clients</h2>

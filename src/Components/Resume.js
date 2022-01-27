@@ -7,7 +7,7 @@ const Resume = () => {
   return (
     <>
       <main className="container resume" id="resume">
-        <section className="row">
+        <section className="row" data-aos="fade-up" data-aos-duration="500">
           <div className="col-12 text-center">
             <span className="subtitle">7+ YEARS OF EXPERIENCE</span>
             <h2 className="title">My Resume</h2>
@@ -251,7 +251,7 @@ const ProgressData = () => {
                   <div
                     className="progress-bar"
                     role="progressbar"
-                    style={{ width: values.progress+"%" }}
+                    style={{ width: values.progress + "%" }}
                     aria-valuenow={values.progress}
                     aria-valuemin="0"
                     aria-valuemax="100"
@@ -280,7 +280,7 @@ const ProgressData = () => {
                   <div
                     className="progress-bar"
                     role="progressbar"
-                    style={{ width: values.progress+"%" }}
+                    style={{ width: values.progress + "%" }}
                     aria-valuenow={values.progress}
                     aria-valuemin="0"
                     aria-valuemax="100"

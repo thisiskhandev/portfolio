@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import ArrowIcon from "../Assets/Images/Icons/arrowIcon.svg";
 import CardsFeaturedArr from "../Components/Environments/CardsFeaturedArr";
 import BootClasses from "./Environments/BootClasses";
@@ -7,7 +7,11 @@ const Features = () => {
   return (
     <>
       <main className="container cardss" id="featuresMain">
-        <section className="row gx-5">
+        <section
+          className="row gx-5"
+          data-aos="fade-up"
+          data-aos-duration="500"
+        >
           <div className="col-12">
             <span className="subtitle">FEATURES</span>
             <h2 className="title">What I Do</h2>
@@ -20,7 +24,11 @@ const Features = () => {
             }
             return (
               <div className={BootClasses[0].CardClass} key={val.id}>
-                <div className="card">
+                <div
+                  className="card"
+                  data-aos="fade-right"
+                  data-aos-duration={val.animDuration}
+                >
                   <div className="card-body">
                     <div className="content">
                       {/* <img

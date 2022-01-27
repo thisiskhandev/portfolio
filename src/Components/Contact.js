@@ -2,23 +2,37 @@ import React from "react";
 import shakeHands from ".././Assets/Images/contact1.webp";
 import SocialIcons from "./SocialIcons";
 import { BsArrowRight } from "react-icons/bs";
+import { useEffect } from "react";
+import Aos from "aos";
+
 const Contact = () => {
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
   return (
     <>
       <main className="container cardss contact_form_sec" id="contactFormSec">
-        <section className="row">
+        <section className="row" data-aos="fade-up" data-aos-duration="500">
           <div className="col-12 text-center">
             <span className="subtitle">CONTACT</span>
             <h2 className="title">Contact With Me</h2>
           </div>
         </section>
         <section className="row mt-5 g-5">
-          <div className="col-xl-5 col-lg-5 col-md-5 col-sm-12 col-12">
+          <div
+            className="col-xl-5 col-lg-5 col-md-5 col-sm-12 col-12"
+            data-aos="fade-in"
+          >
             <div className="card">
               <div className="card-body">
                 <div className="content portfolio_content">
                   <div className="image mb-4 mt-2">
-                    <img src={shakeHands} className="img-fluid" alt="test" />
+                    <img
+                      src={shakeHands}
+                      className="img-fluid"
+                      alt="test"
+                      data-aos="flip-up"
+                    />
                   </div>
                   <h5>Hi I am,</h5>
                   <h2>Hassan Khan</h2>
@@ -47,7 +61,11 @@ const Contact = () => {
               </div>
             </div>
           </div>
-          <div className="col-xl-7 col-lg-7 col-md-7 col-sm-12 col-12">
+          <div
+            className="col-xl-7 col-lg-7 col-md-7 col-sm-12 col-12"
+            data-aos="fade-left"
+            data-aos-duration="2000"
+          >
             <div className="card">
               <div className="card-body">
                 <div className="content portfolio_content">

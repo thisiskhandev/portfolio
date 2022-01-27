@@ -9,6 +9,7 @@ const CardsPortfolioArr = [
     likes: Math.floor(Math.random() * 499),
     projectLink: "https://trifectacreditsolutions.com/",
     modalId: "portModal1",
+    animDuration: 600,
   },
   {
     id: 2,
@@ -20,6 +21,7 @@ const CardsPortfolioArr = [
     likes: Math.floor(Math.random() * 499),
     projectLink: "https://cavcorefitnessmi.com/",
     modalId: "portModal2",
+    animDuration: 900,
   },
   {
     id: 3,
@@ -31,6 +33,7 @@ const CardsPortfolioArr = [
     likes: Math.floor(Math.random() * 499),
     projectLink: "https://wastalearning.com/",
     modalId: "portModal3",
+    animDuration: 1200,
   },
 ];
 

@@ -1,23 +1,23 @@
 const ProgressBarRight = [
   {
     id: 1,
-    progressTitle: "MS Office",
-    progress: 65,
+    progressTitle: "WORDPRESS",
+    progress: 40,
   },
   {
     id: 2,
-    progressTitle: "CSS3",
-    progress: 60,
+    progressTitle: "JAVASCRIPT",
+    progress: 10,
   },
   {
     id: 3,
-    progressTitle: "BOOTSTRAP 4/5",
-    progress: 30,
+    progressTitle: "JQUERY",
+    progress: 15,
   },
   {
     id: 4,
-    progressTitle: "JAVASCRIPT",
-    progress: 10,
+    progressTitle: "MS OFFICE",
+    progress: 45,
   },
 ];
 

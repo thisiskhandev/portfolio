@@ -8,7 +8,6 @@ import Testimonials from "../Testimonials";
 import Clients from "../Clients";
 import Blogs from "../Blogs";
 import Contact from "../Contact";
-import Footer from "../Footer";
 const Home = () => {
   return (
     <>
@@ -28,7 +27,6 @@ const Home = () => {
       <Linebar />
       <Contact />
       <Linebar />
-      <Footer />
     </>
   );
 };

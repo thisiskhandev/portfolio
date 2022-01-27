@@ -10,7 +10,7 @@ const Portfolio = () => {
   return (
     <>
       <main className="container cardss portfolioMain" id="portfolioMain">
-        <section className="row">
+        <section className="row" data-aos="fade-up" data-aos-duration="500">
           <div className="col-12 text-center">
             <span className="subtitle">
               VISIT MY PORTFOLIO AND KEEP YOUR FEEDBACK
@@ -22,7 +22,12 @@ const Portfolio = () => {
           {CardsPortfolioArr.slice(-3).map((val, index) => {
             return (
               <div className={BootClasses[0].CardClass} key={val.id}>
-                <div className="card">
+                <div
+                  className="card"
+                  data-aos="flip-up"
+                  data-aos-duration={val.animDuration}
+                  data-aos-easing="linear"
+                >
                   <div className="card-body">
                     <div className="content portfolio_content">
                       <div className="image text-center mb-4 mt-2">
@@ -48,13 +53,13 @@ const Portfolio = () => {
                     <div className="d-flex title_link">
                       {/* Modal */}
                       <section className="portfolio_modal">
-                          <a
-                            type="button"
-                            data-bs-toggle="modal"
-                            data-bs-target={"#" + val.modalId}
-                          >
-                            {val.title}
-                          </a>
+                        <a
+                          type="button"
+                          data-bs-toggle="modal"
+                          data-bs-target={"#" + val.modalId}
+                        >
+                          {val.title}
+                        </a>
                         <div
                           className="modal fade modalBg"
                           id={val.modalId}

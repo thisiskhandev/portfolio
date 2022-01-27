@@ -4,7 +4,7 @@ const Testimonials = () => {
   return (
     <>
       <main className="container cardss portfolioMain" id="testimonials">
-        <section className="row">
+        <section className="row" data-aos="fade-up" data-aos-duration="500">
           <div className="col-12 text-center">
             <span className="subtitle">WHAT CLIENTS SAY</span>
             <h2 className="title">Testimonials</h2>

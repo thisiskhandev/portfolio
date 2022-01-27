@@ -10,7 +10,7 @@ const Blogs = () => {
   return (
     <>
       <main className="container cardss blogs" id="BlogsHome">
-        <section className="row">
+        <section className="row" data-aos="fade-up" data-aos-duration="500">
           <div className="col-12 text-center">
             <span className="subtitle">
               VISIT MY Blogs AND KEEP YOUR FEEDBACK
