@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.b940264f.chunk.css",
-    "main.js": "/portfolio/static/js/main.2e214d14.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.2e214d14.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.331bb1de.chunk.css",
+    "main.js": "/portfolio/static/js/main.0b469ddc.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.0b469ddc.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.37da8305.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.37da8305.js.map",
     "static/css/2.9d5628d6.chunk.css": "/portfolio/static/css/2.9d5628d6.chunk.css",
@@ -10,9 +10,10 @@
     "static/js/2.98bbd07e.chunk.js.map": "/portfolio/static/js/2.98bbd07e.chunk.js.map",
     "index.html": "/portfolio/index.html",
     "static/css/2.9d5628d6.chunk.css.map": "/portfolio/static/css/2.9d5628d6.chunk.css.map",
-    "static/css/main.b940264f.chunk.css.map": "/portfolio/static/css/main.b940264f.chunk.css.map",
+    "static/css/main.331bb1de.chunk.css.map": "/portfolio/static/css/main.331bb1de.chunk.css.map",
     "static/js/2.98bbd07e.chunk.js.LICENSE.txt": "/portfolio/static/js/2.98bbd07e.chunk.js.LICENSE.txt",
     "static/media/ARIANESPACE-telescope.jpg": "/portfolio/static/media/ARIANESPACE-telescope.05a54884.jpg",
+    "static/media/Hassan-Khan-Studio-Shot.223d6aca.png": "/portfolio/static/media/Hassan-Khan-Studio-Shot.223d6aca.png",
     "static/media/Resume-Hassan-28-01-22.919d03b0.png": "/portfolio/static/media/Resume-Hassan-28-01-22.919d03b0.png",
     "static/media/adobe-photoshop.86d7467e.png": "/portfolio/static/media/adobe-photoshop.86d7467e.png",
     "static/media/arraowicon_portfolio.c053d79d.svg": "/portfolio/static/media/arraowicon_portfolio.c053d79d.svg",
@@ -22,7 +23,6 @@
     "static/media/styles.scss": "/portfolio/static/media/closeIcon.0ada5e43.svg",
     "static/media/contact1.5bbed298.webp": "/portfolio/static/media/contact1.5bbed298.webp",
     "static/media/greaterIcon.279f9a68.svg": "/portfolio/static/media/greaterIcon.279f9a68.svg",
-    "static/media/heroimg.24ee09f0.webp": "/portfolio/static/media/heroimg.24ee09f0.webp",
     "static/media/jwst_hubble_comparison-min.png": "/portfolio/static/media/jwst_hubble_comparison-min.d5e3d841.png",
     "static/media/portfolio-01.cb53c6a3.webp": "/portfolio/static/media/portfolio-01.cb53c6a3.webp",
     "static/media/quote.263ab310.webp": "/portfolio/static/media/quote.263ab310.webp",
@@ -38,7 +38,7 @@
     "static/js/runtime-main.37da8305.js",
     "static/css/2.9d5628d6.chunk.css",
     "static/js/2.98bbd07e.chunk.js",
-    "static/css/main.b940264f.chunk.css",
-    "static/js/main.2e214d14.chunk.js"
+    "static/css/main.331bb1de.chunk.css",
+    "static/js/main.0b469ddc.chunk.js"
   ]
 }
