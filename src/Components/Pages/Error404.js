@@ -1,16 +1,18 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import CTA from "../CTA";
 
 const Error404 = () => {
   return (
     <>
-      <main className="container">
+      <main
+        className="container mt-5 p-5 head_line"
+        id="errorPage"
+        style={{ height: "70vh" }}
+      >
         <section className="row">
-          <div className="col-12">
-            <h1>Oops! You've missed something?</h1>
-            <NavLink to="/portfolio" className="text-capitalize">
-              Back to homepage
-            </NavLink>
+          <div className="col-12 text-center">
+            <h1 className="title">Oops! You've missed something?</h1>
+            <CTA name="Back To Homepage" target="/portfolio" />
           </div>
         </section>
       </main>

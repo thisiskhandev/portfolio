@@ -199,6 +199,17 @@ p {
   opacity: 1;
 }
 
+.block_me {
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
 span.sp_title {
   color: $color-primary;
 }
@@ -340,7 +351,7 @@ ul.hero_icons {
       &:hover {
         background: $background-color-hover;
         transition: $transition;
-        transform: translateY(-5px);
+        transform: translateY(-5px) !important;
       }
     }
   }
@@ -450,6 +461,13 @@ img.hero_image {
     font-size: 50px;
     color: $color-primary;
   }
+}
+
+#home {
+  padding-top: 120px;
+  .inner > img {
+    filter: drop-shadow(5px 5px 13px black);
+}
 }
 
 #portfolioMain {
@@ -1037,13 +1055,13 @@ main.testi_card {
   list-style-type: none;
   position: relative;
   &::before {
-  content: "\2713";
-  display: block;
-  position: absolute;
-  left: -25px;
-  font-weight: bold;
-  color: $color-primary;
-}
+    content: "\2713";
+    display: block;
+    position: absolute;
+    left: -25px;
+    font-weight: bold;
+    color: $color-primary;
+  }
 }
 
 // --------------MEDIA QURIES--------------

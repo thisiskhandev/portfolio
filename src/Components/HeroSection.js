@@ -4,7 +4,7 @@ import IconInsta from "../Assets/Images/Icons/social-icons (2).svg";
 import IconLinkedIn from "../Assets/Images/Icons/social-icons (3).svg";
 import SocialLinks from "./Environments/SocialLinks";
 import Typewriter from "typewriter-effect";
-import heroImg from "../Assets/Images/heroimg.webp";
+import heroImg from "../Assets/Images/Hassan-Khan-Studio-Shot.png";
 import ReactIcon from "../Assets/Images/Icons/atom.png";
 import WordPressIcon from "../Assets/Images/Icons/wordpress.png";
 import PSDIcon from "../Assets/Images/Icons/adobe-photoshop.png";
@@ -15,8 +15,14 @@ const HeroSocialIcons = (props) => {
   return (
     <>
       <li>
-        <a href={props.socialLink} target="_blank" rel="noopener noreferrer">
-          <img src={props.imgsrc} alt={props.alter}/>
+        <a
+          href={props.socialLink}
+          target="_blank"
+          rel="noopener noreferrer"
+          data-aos="fade-down"
+          data-aos-duration={props.animDuration}
+        >
+          <img src={props.imgsrc} alt={props.alter} />
         </a>
       </li>
     </>
@@ -26,7 +32,7 @@ const HeroSocialIcons = (props) => {
 const Home = () => {
   return (
     <>
-      <main id="home" className="pt-5">
+      <main id="home" className="">
         <main className="container">
           <section className="row">
             <div className={Col6Class}>
@@ -57,16 +63,19 @@ const Home = () => {
                       imgsrc={IconFB}
                       socialLink={SocialLinks[0].fbLink}
                       alter={SocialLinks[0].alter}
+                      animDuration={800}
                     />
                     <HeroSocialIcons
                       imgsrc={IconInsta}
                       socialLink={SocialLinks[2].gitLink}
                       alter={SocialLinks[2].alter}
+                      animDuration={1200}
                     />
                     <HeroSocialIcons
                       imgsrc={IconLinkedIn}
                       socialLink={SocialLinks[1].LinkedInLink}
                       alter={SocialLinks[1].alter}
+                      animDuration={1600}
                     />
                   </ul>
                 </div>
@@ -77,11 +86,12 @@ const Home = () => {
                 >
                   <span className="subtitle">BEST SKILL ON</span>
                   <ul className="hero_icons skills_icons">
+                    <HeroSocialIcons imgsrc={ReactIcon} animDuration={80} />
                     <HeroSocialIcons
-                      imgsrc={ReactIcon}
+                      imgsrc={WordPressIcon}
+                      animDuration={1200}
                     />
-                    <HeroSocialIcons imgsrc={WordPressIcon} />
-                    <HeroSocialIcons imgsrc={PSDIcon} />
+                    <HeroSocialIcons imgsrc={PSDIcon} animDuration={1600} />
                   </ul>
                 </div>
               </section>
@@ -91,13 +101,16 @@ const Home = () => {
                 Col6Class + " d-flex align-items-center justify-content-center"
               }
             >
-              <div className="inner">
+              <div className="inner" style={{ position: "relative" }}>
                 <img
                   src={heroImg}
-                  alt="heroImg"
+                  alt="Hassan Khan Front End Web Developer"
                   width="500"
                   className="hero_image"
+                  data-aos="zoom-in-left"
+                  data-aos-duration="1000"
                 />
+                <div className="block_me"></div>
               </div>
             </div>
           </section>

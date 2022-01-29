@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import ArrowIcon from "../Assets/Images/Icons/arrowIcon.svg";
 import CardsFeaturedArr from "../Components/Environments/CardsFeaturedArr";
 import BootClasses from "./Environments/BootClasses";
