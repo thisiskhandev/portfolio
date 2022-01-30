@@ -6,23 +6,7 @@ const BlogsArr = [
     image: require("../../Assets/Images/BlogsImages/webb-telescope-min.jpg")
       .default,
     readTime: "2 min read",
-    blogLink: "blogs/james-webb-telescope",
-  },
-  {
-    id: 2,
-    title: "candada",
-    feature: "james web tel",
-    image: require("../../Assets/Images/BlogsImages/webb-telescope-min.jpg").default,
-    readTime: "2 min read",
-    blogLink: "blogs/",
-  },
-  {
-    id: 3,
-    title: "candada",
-    feature: "james web tel",
-    image: require("../../Assets/Images/BlogsImages/webb-telescope-min.jpg").default,
-    readTime: "2 min read",
-    blogLink: "blogs/",
+    blogLink: "/blogs/james-webb-telescope",
   },
 ];
 

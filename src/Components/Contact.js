@@ -71,74 +71,74 @@ const Contact = () => {
                 <div className="content portfolio_content">
                   <form onSubmit={(e) => e.preventDefault()}>
                     <section className="row mb-3">
-                      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                      <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
                         <label
-                          for="your-name"
-                          class="form-label text-uppercase"
+                          htmlFor="your-name"
+                          className="form-label text-uppercase"
                         >
                           Your Name
                         </label>
                         <input
                           type="text"
-                          class="form-control"
+                          className="form-control"
                           id="your-name"
                           aria-describedby="your-name"
                         />
                       </div>
-                      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                      <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
                         <label
-                          for="tel-phone"
-                          class="form-label text-uppercase"
+                          htmlFor="tel-phone"
+                          className="form-label text-uppercase"
                         >
                           Phone Number
                         </label>
                         <input
                           type="tel"
-                          class="form-control"
+                          className="form-control"
                           id="tel-phone"
                           aria-describedby="tel-phone"
                         />
                       </div>
                     </section>
                     <section className="row mb-3">
-                      <div class="col-12">
-                        <label for="email" class="form-label">
+                      <div className="col-12">
+                        <label htmlFor="email" className="form-label">
                           Email
                         </label>
                         <input
                           type="email"
-                          class="form-control"
+                          className="form-control"
                           id="email"
                           aria-describedby="email"
                         />
                       </div>
                     </section>
                     <section className="row mb-3">
-                      <div class="col-12">
-                        <label for="subject" class="form-label text-uppercase">
+                      <div className="col-12">
+                        <label htmlFor="subject" className="form-label text-uppercase">
                           Subject
                         </label>
                         <input
                           type="text"
-                          class="form-control"
+                          className="form-control"
                           id="subject"
                           aria-describedby="subject"
                         />
                       </div>
                     </section>
                     <section className="row mb-3">
-                      <div class="col-12">
-                        <label for="message" class="form-label text-uppercase">
+                      <div className="col-12">
+                        <label htmlFor="message" className="form-label text-uppercase">
                           Your Message
                         </label>
                         <textarea
-                          class="form-control"
+                          className="form-control"
                           id="message"
                           rows="10"
                         ></textarea>
                       </div>
                     </section>
-                    <button type="submit" class="btn text-uppercase mt-4">
+                    <button type="submit" className="btn text-uppercase mt-4">
                       Send Message <BsArrowRight />
                     </button>
                   </form>

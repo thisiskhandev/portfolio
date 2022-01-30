@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import { AiOutlineClose } from "react-icons/ai";
 
 const Navbar = () => {
   return (
@@ -26,58 +27,13 @@ const Navbar = () => {
                   <span className="navbar-toggler-icon"></span>
                 </button>
                 <div
-                  className="collapse navbar-collapse"
+                  className="collapse navbar-collapse justify-content-end"
                   id="navbarNavDropdown"
                 >
-                  <ul className="navbar-nav" id="mainNav">
-                    <li className="nav-item">
-                      <NavLink
-                        className="nav-link active"
-                        aria-current="page"
-                        to="/portfolio"
-                      >
-                        Home
-                      </NavLink>
-                    </li>
-                    <li className="nav-item">
-                      <a href="portfolio#featuresMain" className="nav-link">
-                        Features
-                      </a>
-                    </li>
-                    <li className="nav-item">
-                      <a href="portfolio#portfolioMain" className="nav-link">
-                        Portfolio
-                      </a>
-                    </li>
-                    <li className="nav-item">
-                      <NavLink className="nav-link" to="/portfolio/about">
-                        Resume
-                      </NavLink>
-                    </li>
-                    <li className="nav-item">
-                      <NavLink className="nav-link" to="/portfolio">
-                        Clients
-                      </NavLink>
-                    </li>
-                    <li className="nav-item">
-                      <NavLink className="nav-link" to="/portfolio/blogs">
-                        Blog
-                      </NavLink>
-                    </li>
-                    <li className="nav-item">
-                      <NavLink className="nav-link" to="/portfolio/about">
-                        About
-                      </NavLink>
-                    </li>
-                    <li className="nav-item">
-                      <NavLink className="nav-link" to="/portfolio">
-                        Contact
-                      </NavLink>
-                    </li>
-                  </ul>
+                  <MenuLinks />
                 </div>
               </main>
-              {/* <MenuM /> */}
+              <MenuM />
             </div>
           </section>
         </nav>
@@ -103,7 +59,7 @@ const MenuM = () => {
             <span className="menu_line"></span>
             <span className="menu_line"></span>
             <span className="menu_line"></span>
-            <pre className="menu_text">Menu</pre>
+            {/* <pre className="menu_text">Menu</pre> */}
           </a>
         </section>
 
@@ -111,27 +67,83 @@ const MenuM = () => {
           className="offcanvas offcanvas-start"
           tabIndex="-1"
           id="offcanvasExample"
-          aria-labelledby="offcanvasExampleLabel"
+          aria-labelledby="canvasMenuTitle"
         >
           <div className="offcanvas-header">
-            <h5 className="offcanvas-title" id="offcanvasExampleLabel">
-              Offcanvas
+            <h5 className="offcanvas-title" id="canvasMenuTitle">
+              <NavLink to="/portfolio">Hassan Khan</NavLink>
             </h5>
-            <button
-              type="button"
-              className="btn-close text-reset"
-              data-bs-dismiss="offcanvas"
-              aria-label="Close"
-            ></button>
+            <div id="closeBtn">
+              <button
+                type="button"
+                className="btn-close text-reset"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              >
+                <AiOutlineClose />
+              </button>
+            </div>
           </div>
           <div className="offcanvas-body">
-            <div>
-              Some text as placeholder. In real life you can have the elements
-              you have chosen. Like, text, images, lists, etc.
-            </div>
+            <MenuLinks />
           </div>
         </div>
       </header>
+    </>
+  );
+};
+
+const MenuLinks = () => {
+  return (
+    <>
+      <div>
+        <ul className="navbar-nav" id="mainNav">
+          <li className="nav-item">
+            <NavLink
+              className="nav-link active"
+              aria-current="page"
+              to="/portfolio"
+            >
+              Home
+            </NavLink>
+          </li>
+          <li className="nav-item">
+            <a href="portfolio#featuresMain" className="nav-link">
+              Features
+            </a>
+          </li>
+          <li className="nav-item">
+            <a href="portfolio#portfolioMain" className="nav-link">
+              Portfolio
+            </a>
+          </li>
+          <li className="nav-item">
+            <NavLink className="nav-link" to="/portfolio/about">
+              Resume
+            </NavLink>
+          </li>
+          <li className="nav-item">
+            <NavLink className="nav-link" to="/portfolio">
+              Clients
+            </NavLink>
+          </li>
+          <li className="nav-item">
+            <NavLink className="nav-link" to="/portfolio/blogs">
+              Blog
+            </NavLink>
+          </li>
+          <li className="nav-item">
+            <NavLink className="nav-link" to="/portfolio/about">
+              About
+            </NavLink>
+          </li>
+          <li className="nav-item">
+            <a href="portfolio#contactFormSec" className="nav-link">
+              Contact
+            </a>
+          </li>
+        </ul>
+      </div>
     </>
   );
 };

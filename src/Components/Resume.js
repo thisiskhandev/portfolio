@@ -2,6 +2,7 @@ import React from "react";
 import ProgressBarLeft from "./Environments/Progress/ProgressBarLeft";
 import ProgressBarRight from "./Environments/Progress/ProgressBarRight";
 import BootClasses from "./Environments/BootClasses";
+import CTA from "../Components/CTA";
 
 const Resume = () => {
   return (
@@ -18,6 +19,7 @@ const Resume = () => {
             <ResumeTab />
           </div>
         </section>
+        <CTA name="Resume & About me" target="/portfolio/about" />
       </main>
     </>
   );
