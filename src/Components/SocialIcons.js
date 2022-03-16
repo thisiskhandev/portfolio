@@ -1,8 +1,8 @@
 import React from "react";
-import IconFB from "../Assets/Images/Icons/social-icons (1).svg";
-import IconInsta from "../Assets/Images/Icons/social-icons (2).svg";
 import IconLinkedIn from "../Assets/Images/Icons/social-icons (3).svg";
+import GitIcon from "../Assets/Images/Icons/github-w-icon.svg";
 import SocialLinks from "./Environments/SocialLinks";
+import WhatsappIcon from "../Assets/Images/Icons/whatsapp-w-icon.svg";
 
 const SocialIconsLinks = (props) => {
   return (
@@ -21,19 +21,19 @@ const SocialIcons = () => {
     <>
       <ul className="hero_icons">
         <SocialIconsLinks
-          imgsrc={IconFB}
-          socialLink={SocialLinks[0].fbLink}
-          alter={SocialLinks[0].alter}
+          imgsrc={IconLinkedIn}
+          socialLink={SocialLinks[1].LinkedInLink}
+          alter={SocialLinks[1].alter}
         />
         <SocialIconsLinks
-          imgsrc={IconInsta}
+          imgsrc={GitIcon}
           socialLink={SocialLinks[2].gitLink}
           alter={SocialLinks[2].alter}
         />
         <SocialIconsLinks
-          imgsrc={IconLinkedIn}
-          socialLink={SocialLinks[1].LinkedInLink}
-          alter={SocialLinks[1].alter}
+          imgsrc={WhatsappIcon}
+          socialLink={SocialLinks[3].waLink}
+          alter={SocialLinks[3].alter}
         />
       </ul>
     </>

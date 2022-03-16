@@ -123,11 +123,6 @@ const MenuLinks = () => {
             </NavLink>
           </li>
           <li className="nav-item">
-            <NavLink className="nav-link" to="/portfolio">
-              Clients
-            </NavLink>
-          </li>
-          <li className="nav-item">
             <NavLink className="nav-link" to="/portfolio/blogs">
               Blog
             </NavLink>
@@ -138,9 +133,9 @@ const MenuLinks = () => {
             </NavLink>
           </li>
           <li className="nav-item">
-            <a href="portfolio#contactFormSec" className="nav-link">
+            <NavLink className="nav-link" to="/portfolio/contact">
               Contact
-            </a>
+            </NavLink>
           </li>
         </ul>
       </div>

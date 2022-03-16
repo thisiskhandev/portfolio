@@ -8,6 +8,7 @@ import heroImg from "../Assets/Images/Hassan-Khan-Studio-Shot.png";
 import ReactIcon from "../Assets/Images/Icons/atom.png";
 import WordPressIcon from "../Assets/Images/Icons/wordpress.png";
 import PSDIcon from "../Assets/Images/Icons/adobe-photoshop.png";
+import GitIcon from "../Assets/Images/Icons/github-w-icon.svg";
 
 let Col6Class = "col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12";
 
@@ -66,7 +67,7 @@ const Home = () => {
                       animDuration={800}
                     />
                     <HeroSocialIcons
-                      imgsrc={IconInsta}
+                      imgsrc={GitIcon}
                       socialLink={SocialLinks[2].gitLink}
                       alter={SocialLinks[2].alter}
                       animDuration={1200}

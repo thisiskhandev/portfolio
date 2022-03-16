@@ -1,14 +1,39 @@
-import React from "react";
+import React, { useRef } from "react";
+import { useHistory } from "react-router-dom";
 import shakeHands from ".././Assets/Images/contact1.webp";
 import SocialIcons from "./SocialIcons";
 import { BsArrowRight } from "react-icons/bs";
 import { useEffect } from "react";
 import Aos from "aos";
-
+import emailjs from "@emailjs/browser";
 const Contact = () => {
   useEffect(() => {
     Aos.init({ duration: 1000 });
   }, []);
+  const form = useRef();
+
+  const history = useHistory();
+  const sendEmail = (e) => {
+    e.preventDefault();
+    // redirecting to thank page
+    history.push("/portfolio/thank-you");
+
+    emailjs
+      .sendForm(
+        "service_id_khan_sahab",
+        "template_h9lbkl8",
+        form.current,
+        "user_ff1zVbvQjb0mjdI4XTgHI"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
   return (
     <>
       <main className="container cardss contact_form_sec" id="contactFormSec">
@@ -69,7 +94,10 @@ const Contact = () => {
             <div className="card">
               <div className="card-body">
                 <div className="content portfolio_content">
-                  <form onSubmit={(e) => e.preventDefault()}>
+                  <form
+                    onSubmit={sendEmail}
+                    ref={form}
+                  >
                     <section className="row mb-3">
                       <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
                         <label
@@ -81,8 +109,10 @@ const Contact = () => {
                         <input
                           type="text"
                           className="form-control"
+                          required
                           id="your-name"
                           aria-describedby="your-name"
+                          name="from_name"
                         />
                       </div>
                       <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
@@ -95,8 +125,10 @@ const Contact = () => {
                         <input
                           type="tel"
                           className="form-control"
+                          required
                           id="tel-phone"
                           aria-describedby="tel-phone"
+                          name="phone"
                         />
                       </div>
                     </section>
@@ -108,33 +140,45 @@ const Contact = () => {
                         <input
                           type="email"
                           className="form-control"
+                          required
                           id="email"
                           aria-describedby="email"
+                          name="from_email"
                         />
                       </div>
                     </section>
                     <section className="row mb-3">
                       <div className="col-12">
-                        <label htmlFor="subject" className="form-label text-uppercase">
+                        <label
+                          htmlFor="subject"
+                          className="form-label text-uppercase"
+                        >
                           Subject
                         </label>
                         <input
                           type="text"
                           className="form-control"
+                          required
                           id="subject"
                           aria-describedby="subject"
+                          name="subject"
                         />
                       </div>
                     </section>
                     <section className="row mb-3">
                       <div className="col-12">
-                        <label htmlFor="message" className="form-label text-uppercase">
+                        <label
+                          htmlFor="message"
+                          className="form-label text-uppercase"
+                        >
                           Your Message
                         </label>
                         <textarea
                           className="form-control"
+                          required
                           id="message"
                           rows="10"
+                          name="message"
                         ></textarea>
                       </div>
                     </section>

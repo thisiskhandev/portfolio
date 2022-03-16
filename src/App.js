@@ -11,8 +11,12 @@ import PortfolioPage from "./Components/Pages/PortfolioPage";
 import BlogsPage from "./Components/Pages/Blogs/BlogsPage";
 import JamesWebBlog from "./Components/Pages/Blogs/AllBlogs/JamesWebBlog";
 import AboutPage from "./Components/Pages/AboutPage";
+import ThankYouPage from "./Components/Pages/ThankYouPage";
+import ContactPage from "./Components/Pages/ContactPage";
 import "aos/dist/aos.css";
+import AOS from "aos/dist/aos.js";
 // import ScrollToTopButton from "./Components/ScrollToTopButton";
+AOS.init();
 const PageUrls = () => {
   return (
     <>
@@ -23,6 +27,8 @@ const PageUrls = () => {
         <Route path="/portfolio/blogs" component={BlogsPage} />;
         <Route path="/blogs/james-webb-telescope" component={JamesWebBlog} />
         <Route path="/portfolio/about" component={AboutPage} />
+        <Route path="/portfolio/contact" component={ContactPage} />
+        <Route exact path="/portfolio/thank-you" component={ThankYouPage} />
         <Route component={Error404} />
       </Switch>
     </>

@@ -14,6 +14,12 @@ const SocialLinks = [
     gitLink: "https://github.com/thisiskhandev",
     alter: "github",
   },
+  {
+    id: 3,
+    waLink:
+      "https://wa.me/923132535393?text=I'm%20interested%20to%20hire%20you",
+    alter: "Whatsapp contact",
+  },
 ];
 
 // console.log(SocialLinks[0].fbLink);

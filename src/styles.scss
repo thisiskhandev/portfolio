@@ -1,7 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
 @import url("https://fonts.googleapis.com/css2?family=League+Script&display=swap");
 
 $color-primary: #ff014f;
@@ -434,6 +432,9 @@ ul.hero_icons {
       }
     }
   }
+  img {
+    width: 25px;
+  }
 }
 
 ul.skills_icons li a {
@@ -545,7 +546,7 @@ img.hero_image {
 #home {
   padding-top: 120px;
   .inner > img {
-    filter: drop-shadow(5px 5px 13px black);
+    filter: drop-shadow(5px 5px 13px black) grayscale(1);
   }
 }
 
