@@ -10,7 +10,7 @@ const Resume = () => {
       <main className="container resume" id="resume">
         <section className="row" data-aos="fade-up" data-aos-duration="500">
           <div className="col-12 text-center">
-            <span className="subtitle">7+ YEARS OF EXPERIENCE</span>
+            <span className="subtitle">2+ YEARS OF EXPERIENCE</span>
             <h2 className="title">My Resume</h2>
           </div>
         </section>
