@@ -1,7 +1,6 @@
 import React from "react";
-import IconFB from "../Assets/Images/Icons/social-icons (1).svg";
-import IconInsta from "../Assets/Images/Icons/social-icons (2).svg";
 import IconLinkedIn from "../Assets/Images/Icons/social-icons (3).svg";
+import WhatsappIcon from "../Assets/Images/Icons/whatsapp-w-icon.svg";
 import SocialLinks from "./Environments/SocialLinks";
 import Typewriter from "typewriter-effect";
 import heroImg from "../Assets/Images/Hassan-Khan-Studio-Shot.png";
@@ -61,10 +60,10 @@ const Home = () => {
                   <span className="subtitle">FIND WITH ME</span>
                   <ul className="hero_icons">
                     <HeroSocialIcons
-                      imgsrc={IconFB}
-                      socialLink={SocialLinks[0].fbLink}
-                      alter={SocialLinks[0].alter}
-                      animDuration={800}
+                      imgsrc={IconLinkedIn}
+                      socialLink={SocialLinks[1].LinkedInLink}
+                      alter={SocialLinks[1].alter}
+                      animDuration={1600}
                     />
                     <HeroSocialIcons
                       imgsrc={GitIcon}
@@ -73,9 +72,9 @@ const Home = () => {
                       animDuration={1200}
                     />
                     <HeroSocialIcons
-                      imgsrc={IconLinkedIn}
-                      socialLink={SocialLinks[1].LinkedInLink}
-                      alter={SocialLinks[1].alter}
+                      imgsrc={WhatsappIcon}
+                      socialLink={SocialLinks[3].waLink}
+                      alter={SocialLinks[3].alter}
                       animDuration={1600}
                     />
                   </ul>

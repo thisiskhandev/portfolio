@@ -22,9 +22,7 @@ const Portfolio = () => {
           {CardsPortfolioArr.slice(-3).map((val, index) => {
             return (
               <div className={BootClasses[0].CardClass} key={val.id}>
-                <div
-                  className="card"
-                >
+                <div className="card">
                   <div className="card-body">
                     <div className="content portfolio_content">
                       <div className="image text-center mb-4 mt-2">
@@ -92,7 +90,7 @@ const Portfolio = () => {
                                   <div
                                     className={
                                       BootClasses[0].Col6Class +
-                                      " text-start position-relative ps-lg-4"
+                                      "text-start position-relative ps-lg-4"
                                     }
                                   >
                                     <span>Featured - {val.feature}</span>
@@ -136,7 +134,7 @@ const Portfolio = () => {
             );
           })}
         </section>
-        <CTA name="View All" target="/portfolios" />
+        <CTA name="View All" target="/portfolio/portfolios" />
       </main>
     </>
   );

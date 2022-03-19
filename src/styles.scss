@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=League+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap");
 
 $color-primary: #ff014f;
 $color-secondary: #f4f5f6;
@@ -57,6 +58,7 @@ $transition: 0.4s linear;
 $font-primary: "Poppins", sans-serif;
 $font-secondary: "Montserrat", sans-serif;
 $font-sign: "League Script", cursive;
+$font-style: "Moon Dance", cursive;
 $h1: 55px;
 $h2: 50px;
 $h3: 40px;
@@ -114,6 +116,22 @@ $h6: 15px;
       left: 0;
       transition: 0.3s;
     }
+  }
+}
+
+@mixin cta-style {
+  background: $background-color-1;
+  color: $color-body;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.4px;
+  padding: 17px 40px;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: $shadow-1;
+  &:hover {
+    background: $background-color-hover;
+    color: $color-white;
   }
 }
 
@@ -236,22 +254,17 @@ h4.title {
 }
 
 .cta a {
-  background: $background-color-1;
-  color: $color-body;
-  font-size: 16px;
-  font-weight: 400;
-  letter-spacing: 0.4px;
-  padding: 17px 40px;
-  border-radius: 5px;
-  text-align: center;
-  box-shadow: $shadow-1;
+  @include cta-style();
   &[aria-current="page"] {
     display: none;
   }
-  &:hover {
-    background: $background-color-hover;
-    color: $color-white;
-  }
+}
+a.cta {
+  @include cta-style();
+  display: block;
+  text-decoration: none;
+  width: 250px;
+  margin: auto;
 }
 
 a#scrollToTop {
@@ -952,7 +965,10 @@ main.testi_card {
     }
   }
 }
-
+#v-pills-profile .client_info h3,
+#v-pills-home .client_info .client_card img {
+  display: none;
+}
 .client_info {
   .client_card {
     box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
@@ -970,6 +986,11 @@ main.testi_card {
     a {
       text-decoration: none;
     }
+    h3 {
+      font-family: $font-style;
+      padding: 62px 0;
+      font-size: 30px;
+    }
     h5 {
       font-size: 18px;
       color: #7c838e;
@@ -980,6 +1001,10 @@ main.testi_card {
         transition: $transition;
       }
     }
+  }
+  img {
+    width: 80px;
+    image-rendering: -webkit-optimize-contrast;
   }
 }
 

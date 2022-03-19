@@ -23,7 +23,7 @@ const PageUrls = () => {
       {/* Childern k parent ko exact dena lazmi hai */}
       <Switch>
         <Route exact path="/portfolio" component={Home} />
-        <Route path="/portfolios" component={PortfolioPage} />
+        <Route path="/portfolio/portfolios" component={PortfolioPage} />
         <Route path="/portfolio/blogs" component={BlogsPage} />;
         <Route path="/blogs/james-webb-telescope" component={JamesWebBlog} />
         <Route path="/portfolio/about" component={AboutPage} />

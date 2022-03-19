@@ -16,8 +16,8 @@ const ProgressBarLeft = [
   },
   {
     id: 4,
-    progressTitle: "BOOTSTRAP 4/5",
-    progress: 89,
+    progressTitle: "BOOTSTRAP",
+    progress: 90,
   },
 ];
 

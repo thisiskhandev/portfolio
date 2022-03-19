@@ -113,9 +113,9 @@ const MenuLinks = () => {
             </a>
           </li>
           <li className="nav-item">
-            <a href="portfolio#portfolioMain" className="nav-link">
+            <NavLink className="nav-link" to="/portfolio/portfolios">
               Portfolio
-            </a>
+            </NavLink>
           </li>
           <li className="nav-item">
             <NavLink className="nav-link" to="/portfolio/about">

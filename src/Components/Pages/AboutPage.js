@@ -1,6 +1,6 @@
 import React from "react";
 import TargetButton from "../TargetButton";
-import ResumeShot from "../../Assets/Images/Resume-Hassan-28-01-22.png";
+import ResumeShot from "../../Assets/Images/resume.png";
 
 const AboutPage = () => {
   return (
@@ -14,7 +14,7 @@ const AboutPage = () => {
             </div>
           </div>
           <div className="row">
-            <div className="col-12 text-lg-start text-md-start text-sm-center text-center">
+            <div className="col-12">
               <p>
                 Hi,
                 <br />I am <strong>Hassan Khan</strong> Creative Front-End /
@@ -81,7 +81,7 @@ const AboutPage = () => {
               <img
                 src={ResumeShot}
                 alt="about"
-                className=""
+                className="img-fluid"
                 width="600px"
                 style={{ borderRadius: "10px" }}
               />
@@ -90,7 +90,7 @@ const AboutPage = () => {
           <div className="btnss" data-aos="fade-up" data-aos-duration="1500">
             <TargetButton
               name="Download Resume"
-              target="https://drive.google.com/file/d/1TBjho1c1xUZLaismdKQA_6VCZRSVD5yg/view?usp=sharing"
+              target="https://drive.google.com/file/d/1iN9aCUwDkxXoauR6nJZyVsZ-her4Y-R7/view?usp=sharing"
             />
             <TargetButton
               name="View Projects"

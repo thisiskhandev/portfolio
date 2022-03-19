@@ -1,7 +1,7 @@
 import React from "react";
 // import BootClasses from "./Environments/BootClasses";
-import WordPressClientsArr from "./Environments/ClientsArr/WordPressClientsArr";
-import HTMLClientsArr from "./Environments/ClientsArr/HTMLClientsArr";
+import WordPressToolsArr from "./Environments/ClientsArr/WordPressToolsArr";
+import HTMLToolsArr from "./Environments/ClientsArr/HTMLToolsArr";
 
 const Clients = () => {
   return (
@@ -9,8 +9,8 @@ const Clients = () => {
       <main className="container" id="clients">
         <section className="row" data-aos="fade-up" data-aos-duration="500">
           <div className="col-12">
-            <span className="subtitle">POPULAR CLIENTS</span>
-            <h2 className="title">Popular Clients</h2>
+            <span className="subtitle">AWESOME TOOLS I WORK ON</span>
+            <h2 className="title">POPULAR TOOLS</h2>
           </div>
         </section>
         <section className="row mt-5">
@@ -60,7 +60,7 @@ const Tabs = () => {
                 aria-controls="v-pills-profile"
                 aria-selected="false"
               >
-                Custom HTML
+                Custom Front-End
               </button>
             </div>
             <TabContent />
@@ -83,13 +83,13 @@ const TabContent = () => {
             aria-labelledby="v-pills-home-tab"
           >
             <section className="row client_info text-center g-4">
-              {WordPressClientsArr.map((values) => {
+              {WordPressToolsArr.map((values) => {
                 return (
                   <ClientData
                     key={values.id}
                     ClientImage={values.ClientImage}
                     ClientName={values.ClientName}
-                    ClientTarget={values.ClientTarget}
+                    // ClientTarget={values.ClientTarget}
                   />
                 );
               })}
@@ -102,13 +102,13 @@ const TabContent = () => {
             aria-labelledby="v-pills-profile-tab"
           >
             <section className="row client_info text-center g-4">
-              {HTMLClientsArr.map((values) => {
+              {HTMLToolsArr.map((values) => {
                 return (
                   <ClientData
                     key={values.id}
                     ClientImage={values.ClientImage}
                     ClientName={values.ClientName}
-                    ClientTarget={values.ClientTarget}
+                    // ClientTarget={values.ClientTarget}
                   />
                 );
               })}
@@ -135,6 +135,7 @@ const ClientData = (props) => {
               alt={props.ClientName}
               className="img-fluid"
             />
+            <h3>{props.ClientName}</h3>
             <hr style={{ width: "100%", backgroundColor: "#000" }} />
             <h5>{props.ClientName}</h5>
           </a>
