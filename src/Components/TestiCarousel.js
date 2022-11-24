@@ -39,6 +39,7 @@ const TestiCarousel = () => {
                 clientName={val.clientName}
                 clientDesignation={val.clientDesignation}
                 title={val.title}
+                shot={val.shot}
                 date={val.date}
                 comments={val.comments}
               />
@@ -52,6 +53,7 @@ const TestiCarousel = () => {
 export default TestiCarousel;
 
 const TestiCards = (props) => {
+  const {shot, client, clientName, clientDesignation, title, date, comments} = props;
   return (
     <>
       <main className="container testi_card">
@@ -61,12 +63,12 @@ const TestiCards = (props) => {
               <div className="testi_content">
                 <div className="inner_image mb-3">
                   <picture>
-                    <img src={img1} alt="images" className="img-fluid" />
+                    <img src={shot || img1} alt="images" className="img-fluid" />
                   </picture>
                 </div>
-                <span className="subtitle">{props.client}</span>
-                <h3 className="card-title">{props.clientName}</h3>
-                <span className="designation">{props.clientDesignation}</span>
+                <span className="subtitle">{client}</span>
+                <h3 className="card-title">{clientName}</h3>
+                <span className="designation">{clientDesignation}</span>
               </div>
             </div>
           </div>
@@ -83,8 +85,8 @@ const TestiCards = (props) => {
               <div className="row card_description">
                 <div className="title_area row">
                   <div className="col-xl-8 col-lg-8 col-md-8 col-sm-7 col-12">
-                    <h3 className="title">{props.title}</h3>
-                    <span className="date">{props.date}</span>
+                    <h3 className="title">{title}</h3>
+                    <span className="date">{date}</span>
                   </div>
                   <div className="col-xl-4 col-lg-4 col-md-4 col-sm-5 col-12 d-flex justify-content-end align-items-center justify-content-sm-center my-xl-0 my-lg-0 my-md-0 my-sm-0 my-3">
                     <div className="rating">
@@ -97,7 +99,7 @@ const TestiCards = (props) => {
                   </div>
                 </div>
                 <hr />
-                <p className="description">{props.comments}</p>
+                <p className="description">{comments}</p>
               </div>
             </div>
           </div>

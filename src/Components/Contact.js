@@ -63,8 +63,7 @@ const Contact = () => {
                   <h2>Hassan Khan</h2>
                   <p className="text-capitalize">front-end web developer</p>
                   <p>
-                    I am available for freelance work. Connect with me via and
-                    call in to my account.
+                    Intereset to hire me? Connect with me via:
                   </p>
                   <p>
                     <span>Phone: </span>

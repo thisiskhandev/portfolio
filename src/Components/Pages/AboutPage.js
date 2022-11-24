@@ -1,7 +1,7 @@
 import React from "react";
 import TargetButton from "../TargetButton";
-import ResumeShot from "../../Assets/Images/resume.png";
-
+import ResumeShot from "../../Assets/Images/Resume-Hassan Khan.webp";
+import resumePDF from "../../Assets/Resume-Hassan Khan-ReactJS.pdf";
 const AboutPage = () => {
   return (
     <>
@@ -90,7 +90,8 @@ const AboutPage = () => {
           <div className="btnss" data-aos="fade-up" data-aos-duration="1500">
             <TargetButton
               name="Download Resume"
-              target="https://drive.google.com/file/d/1iN9aCUwDkxXoauR6nJZyVsZ-her4Y-R7/view?usp=sharing"
+              target={resumePDF}
+              download="Resume - Hassan Khan - ReactJS.pdf"
             />
             <TargetButton
               name="View Projects"

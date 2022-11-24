@@ -3,7 +3,7 @@ import IconLinkedIn from "../Assets/Images/Icons/social-icons (3).svg";
 import WhatsappIcon from "../Assets/Images/Icons/whatsapp-w-icon.svg";
 import SocialLinks from "./Environments/SocialLinks";
 import Typewriter from "typewriter-effect";
-import heroImg from "../Assets/Images/Hassan-Khan-Studio-Shot.png";
+import heroImg from "../Assets/Images/Hassan-Khan-studio-shot.webp";
 import ReactIcon from "../Assets/Images/Icons/atom.png";
 import WordPressIcon from "../Assets/Images/Icons/wordpress.png";
 import PSDIcon from "../Assets/Images/Icons/adobe-photoshop.png";

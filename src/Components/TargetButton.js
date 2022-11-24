@@ -9,6 +9,7 @@ const TargetButton = (btnProps) => {
           className="text-uppercase text-decoration-none"
           target="_blank"
           rel="noopener noreferrer"
+          download={btnProps.download}
         >
           {btnProps.name}
         </a>
