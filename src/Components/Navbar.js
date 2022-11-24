@@ -1,15 +1,24 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import { AiOutlineClose } from "react-icons/ai";
 
 const Navbar = () => {
+  const location = useLocation();
+  let pageName = location.pathname.split("/").filter(Boolean).pop();
+  console.log(location.pathname.split("/").filter(Boolean).pop());
+  if (pageName === undefined) {
+    pageName = "home";
+  }
+  document
+    .getElementsByTagName("body")[0]
+    .setAttribute("data-page-id", pageName);
   return (
     <>
       <header id="MenuD" className="mb-5 pb-5">
         <nav className="navbar navbar-expand-lg navbar-dark">
           <section className="container">
             <div className="col-lg-3 col-md-3 col-sm-3">
-              <NavLink className="navbar-brand" to="/portfolio">
+              <NavLink className="navbar-brand" to="/">
                 Khan
               </NavLink>
             </div>
@@ -71,7 +80,7 @@ const MenuM = () => {
         >
           <div className="offcanvas-header">
             <h5 className="offcanvas-title" id="canvasMenuTitle">
-              <NavLink to="/portfolio">Hassan Khan</NavLink>
+              <NavLink to="/">Hassan Khan</NavLink>
             </h5>
             <div id="closeBtn">
               <button
@@ -99,41 +108,37 @@ const MenuLinks = () => {
       <div>
         <ul className="navbar-nav" id="mainNav">
           <li className="nav-item">
-            <NavLink
-              className="nav-link active"
-              aria-current="page"
-              to="/portfolio"
-            >
+            <NavLink className="nav-link active" aria-current="page" to="/">
               Home
             </NavLink>
           </li>
           <li className="nav-item">
-            <a href="portfolio#featuresMain" className="nav-link">
-              Features
-            </a>
-          </li>
-          <li className="nav-item">
-            <NavLink className="nav-link" to="/portfolio/portfolios">
-              Portfolio
+            <NavLink className="nav-link" to="/features">
+              Solutions
             </NavLink>
           </li>
           <li className="nav-item">
-            <NavLink className="nav-link" to="/portfolio/about">
+            <NavLink className="nav-link" to="/projects">
+              Projects
+            </NavLink>
+          </li>
+          <li className="nav-item">
+            <NavLink className="nav-link" to="/about">
               Resume
             </NavLink>
           </li>
           <li className="nav-item">
-            <NavLink className="nav-link" to="/portfolio/blogs">
+            <NavLink className="nav-link" to="/blogs">
               Blog
             </NavLink>
           </li>
           <li className="nav-item">
-            <NavLink className="nav-link" to="/portfolio/about">
+            <NavLink className="nav-link" to="/about">
               About
             </NavLink>
           </li>
           <li className="nav-item">
-            <NavLink className="nav-link" to="/portfolio/contact">
+            <NavLink className="nav-link" to="/contact">
               Contact
             </NavLink>
           </li>

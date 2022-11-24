@@ -12,7 +12,7 @@ const Features = () => {
           data-aos="fade-up"
           data-aos-duration="500"
         >
-          <div className="col-12">
+          <div className="col-12 title">
             <span className="subtitle">FEATURES</span>
             <h2 className="title">What I Do</h2>
           </div>
@@ -31,12 +31,6 @@ const Features = () => {
                 >
                   <div className="card-body">
                     <div className="content">
-                      {/* <img
-                        src={val.image}
-                        className="img-fluid"
-                        alt="TwitchIcon"
-                        width="70"
-                      /> */}
                       <div className="icons">{val.image}</div>
                       <h3 className="card-title mt-4">{val.title}</h3>
                       <p className="card-text mt-4">{val.para}</p>

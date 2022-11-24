@@ -19,7 +19,7 @@ const Resume = () => {
             <ResumeTab />
           </div>
         </section>
-        <CTA name="Resume & About me" target="/portfolio/about" />
+        <CTA name="Resume & About me" target="/about" />
       </main>
     </>
   );
@@ -33,7 +33,7 @@ const ResumeTab = () => {
       <ul className="nav nav-tabs" id="myTab" role="tablist">
         <li className="nav-item" role="presentation">
           <TabsPillsBtns TabName="Education" ActiveClassName=" active " />
-          <TabsPillsBtns TabName="ProfessionalSkills" />
+          <TabsPillsBtns TabName="Professional&nbsp;Skills" />
           <TabsPillsBtns TabName="Experience" />
         </li>
       </ul>
@@ -47,7 +47,7 @@ const ResumeTab = () => {
           Features="2015 - 2021"
         />
         <TabContent
-          TabContentName="ProfessionalSkills"
+          TabContentName="Professional&nbsp;Skills"
           TabContent={<ProgressData />}
           TitleContent="Design & Development Skills"
           Features="Features"
@@ -237,11 +237,11 @@ const ProgressData = () => {
     <>
       <main className="row progress_bars">
         <section className={BootClasses[0].Col6Class}>
-          {ProgressBarLeft.map((values) => {
+          {ProgressBarLeft.map((values, index) => {
             return (
               <div
                 className="progress_chart position-relative mb-5"
-                key={values.id}
+                key={index}
               >
                 <h6 className="title text-uppercase">{values.progressTitle}</h6>
                 <section
@@ -266,11 +266,11 @@ const ProgressData = () => {
           })}
         </section>
         <section className={BootClasses[0].Col6Class}>
-          {ProgressBarRight.map((values) => {
+          {ProgressBarRight.map((values, index) => {
             return (
               <div
                 className="progress_chart position-relative mb-5"
-                key={values.id}
+                key={index}
               >
                 <h6 className="title text-uppercase">{values.progressTitle}</h6>
                 <section

@@ -1,7 +1,7 @@
 import React from "react";
 import TargetButton from "../TargetButton";
-import ResumeShot from "../../Assets/Images/Resume-Hassan Khan.webp";
-import resumePDF from "../../Assets/Resume-Hassan Khan-ReactJS.pdf";
+import ResumeShot from "../../Assets/Images/resume.webp";
+import resumePDF from "../../Assets/Resume - Hassan Khan - ReactJS - 24-11-22.pdf";
 const AboutPage = () => {
   return (
     <>
@@ -85,6 +85,7 @@ const AboutPage = () => {
                 width="600px"
                 style={{ borderRadius: "10px" }}
               />
+              <h6 className="title" style={{margin: "10px 0 0 0", fontSize: 12}}>Last updated on 11/24/2022</h6>
             </div>
           </div>
           <div className="btnss" data-aos="fade-up" data-aos-duration="1500">

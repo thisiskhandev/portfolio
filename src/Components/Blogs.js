@@ -64,7 +64,7 @@ const Blogs = () => {
             );
           })}
         </section>
-        <CTA name="View All" target="/portfolio/blogs" />
+        <CTA name="View All" target="/blogs" />
       </main>
     </>
   );

@@ -10,6 +10,7 @@ const PortfolioPage = () => {
           href="https://docs.google.com/spreadsheets/d/1YVG7fvLISMtkrtwgz6UGcTtst3PJ0GbL/edit#gid=750940437"
           className="cta"
           target="_blank"
+          rel="noopener noreferrer nofollow"
         >
           View All Projects
         </a>

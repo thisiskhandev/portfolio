@@ -16,7 +16,7 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
     // redirecting to thank page
-    history.push("/portfolio/thank-you");
+    history.push("/thank-you");
 
     emailjs
       .sendForm(
@@ -68,14 +68,14 @@ const Contact = () => {
                   <p>
                     <span>Phone: </span>
                     <span>
-                      <a href="tel:03132535939"> 03132535939</a>
+                      <a href="tel:+923132535939"> 03132535939</a>
                     </span>
                   </p>
                   <p>
                     <span>Email: </span>
                     <span>
-                      <a href="mailto:hassankhan427726@outlook.com">
-                        hassankhan427726@outlook.com
+                      <a href="mailto:hassan.khan.dev@proton.me">
+                        hassan.khan.dev@proton.me
                       </a>
                     </span>
                   </p>

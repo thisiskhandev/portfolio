@@ -15,7 +15,7 @@ const Home = () => {
       <Linebar />
       <Features />
       <Linebar />
-      <Portfolio />
+      <Portfolio limit="-3" />
       <Linebar />
       <Resume />
       <Linebar />

@@ -12,7 +12,7 @@ const Error404 = () => {
         <section className="row">
           <div className="col-12 text-center">
             <h1 className="title">Oops! You've missed something?</h1>
-            <CTA name="Back To Homepage" target="/portfolio" />
+            <CTA name="Back To Homepage" target="/" />
           </div>
         </section>
       </main>

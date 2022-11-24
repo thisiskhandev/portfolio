@@ -135,6 +135,11 @@ $h6: 15px;
   }
 }
 
+@mixin top-bottom-padding {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
 ::selection {
   background-color: $color-primary;
   color: $color-secondary;
@@ -160,6 +165,10 @@ $h6: 15px;
   margin: 0;
 }
 
+[data-page-id="projects"] a.projects {
+  display: none;
+}
+
 body#body {
   background-color: $background-color-2;
   font-family: $font-secondary;
@@ -167,6 +176,14 @@ body#body {
   overflow-y: auto;
   color: $color-lightn;
   scroll-behavior: smooth;
+  &[data-page-id="features"] {
+    main#featuresMain {
+      @include top-bottom-padding();
+      section > div.title {
+        text-align: center;
+      }
+    }
+  }
 }
 
 .no_hover {
@@ -230,6 +247,15 @@ span.sp_title {
   color: $color-primary;
 }
 
+a[data-bs-toggle="modal"] {
+  transition: $transition;
+  &:hover {
+    transition: $transition;
+    color: $color-primary;
+    cursor: pointer !important;
+  }
+}
+
 h2.title {
   color: $color-lightn;
   font-size: 60px;
@@ -255,9 +281,9 @@ h4.title {
 
 .cta a {
   @include cta-style();
-  &[aria-current="page"] {
-    display: none;
-  }
+  // &[aria-current="page"] {
+  //   display: none;
+  // }
 }
 a.cta {
   @include cta-style();
@@ -487,7 +513,7 @@ img.hero_image {
     border: 0;
     border-radius: 8px;
     box-shadow: $shadow-1;
-    cursor: default;
+    cursor: pointer;
     position: relative;
     &:hover {
       background: $background-color-hover;
@@ -526,6 +552,8 @@ img.hero_image {
         img {
           transition: 0.3s;
           width: 100%;
+          height: 220px;
+          object-fit: cover;
         }
         &:hover > img {
           transform: scale(1.2);
@@ -563,20 +591,19 @@ img.hero_image {
   }
 }
 
-#portfolioMain {
-  .content {
-    height: auto;
-    img.arrow_icons {
-      position: inherit;
-    }
-  }
-}
-
-span.likes_project {
+.like_btn {
   font-weight: 300;
+  outline: none;
   color: #fff;
+  border: 0;
+  background: transparent;
   > svg {
     margin-top: -5px;
+    transition: $transition;
+  }
+  &:hover svg {
+    color: $color-primary;
+    transition: $transition;
   }
 }
 
@@ -808,6 +835,95 @@ main.progress_bars {
       font-size: 16px;
     }
   }
+  .progress-bar[aria-valuenow="30"] {
+    animation: progress30 0.8s linear 1s forwards;
+  }
+  .progress-bar[aria-valuenow="50"] {
+    animation: progress50 0.8s linear 1s forwards;
+  }
+  .progress-bar[aria-valuenow="60"] {
+    animation: progress60 0.8s linear 1s forwards;
+  }
+  .progress-bar[aria-valuenow="70"] {
+    animation: progress70 1s linear 1s forwards;
+  }
+  .progress-bar[aria-valuenow="75"] {
+    animation: progress75 1s linear 1s forwards;
+  }
+  .progress-bar[aria-valuenow="80"] {
+    animation: progress80 1s linear 1s forwards;
+  }
+  .progress-bar[aria-valuenow="85"] {
+    animation: progress85 1.2s linear 1s forwards;
+  }
+  .progress-bar[aria-valuenow="90"] {
+    animation: progress90 1.5s linear 1s forwards;
+  }
+}
+
+@keyframes progress30 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 30%;
+  }
+}
+@keyframes progress50 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 50%;
+  }
+}
+@keyframes progress60 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 60%;
+  }
+}
+@keyframes progress70 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 70%;
+  }
+}
+@keyframes progress75 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 75%;
+  }
+}
+@keyframes progress80 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 80%;
+  }
+}
+@keyframes progress85 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 85%;
+  }
+}
+@keyframes progress90 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 90%;
+  }
 }
 
 main.testi_card {
@@ -966,10 +1082,6 @@ main.testi_card {
     }
   }
 }
-#v-pills-profile .client_info h3,
-#v-pills-home .client_info .client_card img {
-  display: none;
-}
 .client_info {
   .client_card {
     box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
@@ -989,7 +1101,6 @@ main.testi_card {
     }
     h3 {
       font-family: $font-style;
-      padding: 62px 0;
       font-size: 30px;
     }
     h5 {
@@ -1009,6 +1120,21 @@ main.testi_card {
   }
 }
 
+#portfolioMain {
+  .content {
+    height: auto;
+    img.arrow_icons {
+      position: inherit;
+    }
+  }
+  h4 {
+    font-family: $font-secondary;
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 0;
+  }
+}
+
 .blogs {
   .card {
     &:hover {
@@ -1021,7 +1147,8 @@ main.testi_card {
   h3 {
     font-family: $font-secondary;
     font-weight: 500;
-    font-size: 22px;
+    font-size: 20px;
+    margin-bottom: 0;
     color: $color-lightn;
     transition: $transition;
   }

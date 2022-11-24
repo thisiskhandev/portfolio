@@ -15,6 +15,7 @@ import ThankYouPage from "./Components/Pages/ThankYouPage";
 import ContactPage from "./Components/Pages/ContactPage";
 import "aos/dist/aos.css";
 import AOS from "aos/dist/aos.js";
+import Features from "./Components/Features";
 // import ScrollToTopButton from "./Components/ScrollToTopButton";
 AOS.init();
 const PageUrls = () => {
@@ -22,13 +23,14 @@ const PageUrls = () => {
     <>
       {/* Childern k parent ko exact dena lazmi hai */}
       <Switch>
-        <Route exact path="/portfolio" component={Home} />
-        <Route path="/portfolio/portfolios" component={PortfolioPage} />
-        <Route path="/portfolio/blogs" component={BlogsPage} />;
+        <Route exact path="/" component={Home} />
+        <Route path="/projects" component={PortfolioPage} />
+        <Route exact path="/blogs" component={BlogsPage} />;
+        <Route path="/features" component={Features} />;
         <Route path="/blogs/james-webb-telescope" component={JamesWebBlog} />
-        <Route path="/portfolio/about" component={AboutPage} />
-        <Route path="/portfolio/contact" component={ContactPage} />
-        <Route exact path="/portfolio/thank-you" component={ThankYouPage} />
+        <Route path="/about" component={AboutPage} />
+        <Route path="/contact" component={ContactPage} />
+        <Route path="/thank-you" component={ThankYouPage} />
         <Route component={Error404} />
       </Switch>
     </>
