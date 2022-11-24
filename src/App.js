@@ -4,7 +4,7 @@ import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js";
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
-import { Route, Switch } from "react-router-dom";
+import { Redirect, Route, Switch } from "react-router-dom";
 import Home from "./Components/Pages/Home";
 import Error404 from "./Components/Pages/Error404";
 import PortfolioPage from "./Components/Pages/PortfolioPage";
@@ -31,6 +31,10 @@ const PageUrls = () => {
         <Route path="/about" component={AboutPage} />
         <Route path="/contact" component={ContactPage} />
         <Route path="/thank-you" component={ThankYouPage} />
+        <Route
+          path="/portfolio"
+          render={() => <Redirect to="/" component={Home} />}
+        />
         <Route component={Error404} />
       </Switch>
     </>
